@@ -275,16 +275,80 @@
 // }
 
 
-public class Example{
-    public static void main(String args[]){
-        int x,y,z;
-        x = 100;
-        y = 200;
+// public class Example{
+//     public static void main(String args[]){
+//         int x,y,z;
+//         x = 100;
+//         y = 200;
 
-        x = y;
-        z=x+y;
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
-    }
-}
+//         x = y;
+//         z=x+y;
+//         System.out.println(x);
+//         System.out.println(y);
+//         System.out.println(z);
+//     }
+// }
+
+
+// ===========================================================================
+// ---> String Concat
+// ---> Arithmatic Addition
+
+// public class Example{
+//     public static void main(String args[]){
+//         System.out.println("AB"+"CD");
+//         System.out.println(10+20);
+//         System.out.println(10+"20");
+//         System.out.println("10"+20);
+//         System.out.println("10+20");
+//         System.out.println("10"+"20");
+//         System.out.println(10+"20");
+//         System.out.println("10"+20);
+//     }
+// }
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x=10,y=20,z=30;
+//         System.out.println("x+y+z");    //x+y+z
+//         System.out.println("x+y"+"z");    //x+yz
+//         System.out.println("x"+"y+z");    //xy+z
+//         System.out.println(x+"y+z");      //10y+z
+//         System.out.println("x+y"+z);      //x+y30
+//         System.out.println("x"+"y"+"z");  //xyz
+//         System.out.println(x+"y"+"z");    //10yz
+//         System.out.println("x"+y+"z");    //x20z
+//         System.out.println("x"+"y"+z);    //xy30
+//         System.out.println(x+"y"+z);      //10y30
+//         System.out.println("x"+y+z);      //x2030
+//         System.out.println(z+y+"z");      //50z
+//         System.out.println(x+y+z);        //60
+//     }
+// }
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         int age;
+//         age=20;
+//         System.out.println("Your age is "+age);
+//     }
+// }
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x=100,y=200;
+//         System.out.println(x+" "+y);
+//     }
+// }
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x=100,y=200;
+//         System.out.println("x+y"+"="+(x+y));
+//     }
+// }
