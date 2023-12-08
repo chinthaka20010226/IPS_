@@ -84,3 +84,18 @@
 // }
 
 
+// ===============================================================================
+// What happen of print,
+
+// public class Example{
+//     public static void main(String args[]){
+//         System.out.println("Chinthaka");
+//         System.out.println(1);
+//         System.out.println(true);
+//         System.out.println(1.23);
+//         System.out.println(-125);
+//     }
+// }
+
+
+// ==========================================================================
