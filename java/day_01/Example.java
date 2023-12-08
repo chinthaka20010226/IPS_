@@ -1,3 +1,5 @@
+import java.util.*;
+
 // public class Example{
 //     public static void main(String args[]){
 //         System.out.println("Hello Java!");
@@ -352,3 +354,37 @@
 //         System.out.println("x+y"+"="+(x+y));
 //     }
 // }
+
+
+// =================================================================================================
+// How to get input from key board ???
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x,y,z;
+
+//         // x=100;
+//         // y=200;
+//         // z=x+y;
+//         // System.out.println(x+"+"+y+"="+z);
+        
+//         Scanner input=new Scanner(System.in);
+//         System.out.print("input value of x:");
+//         x=input.nextInt();
+//         System.out.print("input value of y:");
+//         y=input.nextInt();
+//         System.out.print(x+"+"+y+"="+(x+y));
+//     }
+// }
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("Input your age:");
+//         int age=input.nextInt();
+//         System.out.println("your age is "+age);
+//     }
+// }
+
+
