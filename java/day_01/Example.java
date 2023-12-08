@@ -114,13 +114,34 @@
 
 
 // =======================================================================================
+// Java Comments
+
+// public class Example{
+//     public static void main(String args[]){
+//         // single line comment /  in-line comment
+
+//         /*
+//          * multi - line comment / block comment / doc comment
+//          */
+//     }
+// }
+
+
+// ====================================================================================
+// .println() VS .print()
 
 public class Example{
     public static void main(String args[]){
-        // single line comment /  in-line comment
-
-        /*
-         * multi - line comment / block comment / doc comment
-         */
+        System.out.println("A");
+        System.out.println("B");
+        System.out.print("C");
+        System.out.print("D");
+        System.out.println("E");
     }
 }
+
+/* 
+A
+B
+CDE
+*/
