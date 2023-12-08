@@ -101,13 +101,26 @@
 // ==========================================================================
 // Java Literals ---> simple data 
 
+// public class Example{
+//     public static void main(String args[]){
+//         System.out.println("Chinthaka");
+//         System.out.println('A');
+//         System.out.println(123);
+//         System.out.println(1.23);
+//         System.out.println(true);
+//         System.out.println("-123");
+//     }
+// }
+
+
+// =======================================================================================
+
 public class Example{
     public static void main(String args[]){
-        System.out.println("Chinthaka");
-        System.out.println('A');
-        System.out.println(123);
-        System.out.println(1.23);
-        System.out.println(true);
-        System.out.println("-123");
+        // single line comment /  in-line comment
+
+        /*
+         * multi - line comment / block comment / doc comment
+         */
     }
 }
