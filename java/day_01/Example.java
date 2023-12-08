@@ -135,13 +135,9 @@ public class Example{
         System.out.println("A");
         System.out.println("B");
         System.out.print("C");
+        System.out.println();
+        //System.out.print();  // Error,value is mandatory inside the bracket, 
         System.out.print("D");
         System.out.println("E");
     }
 }
-
-/* 
-A
-B
-CDE
-*/
