@@ -938,3 +938,89 @@ import java.util.*;
 
 
 
+// ---> Loop...
+
+// --> for loop,
+
+// public class Example{
+//     public static void main(String args[]){
+//         // for(int i=0;i<100;i++){
+//         //     // code block....
+//         // }
+
+
+//         // for(int i=0;i<100;i++)
+//         // System.out.println(i);
+//         // // System.out.println(i); // Error...
+
+
+//         // int k=0;
+//         // for(int i=0;i<100;i++){
+//         //     // int k=0;
+//         //     System.out.println(k);
+//         //     k++;
+//         // }
+//         // // System.out.println(i); // Error...
+//         // // System.out.println(k); // Error...
+
+
+
+
+//         // int k;
+//         // for(int i=0;i<100;i++){
+//         //     k=50;
+//         // }
+//         // // System.out.println(k); // Error...
+
+
+
+//         // System.out.print("[");
+//         // for(int i=0;i<100;i++){
+//         //     System.out.print((i+1)+",");
+//         // }
+//         // System.out.println("\b]");
+
+
+
+//         // Random r=new Random();
+//         // for(int i=0;i<100;i++){
+//         //     System.out.println(r.nextInt(101));
+//         // }
+//     }
+// }
+
+
+// --> while loop
+
+// public class Example{
+//     public static void main(String args[]){
+//         // int i=0;
+//         // while(i<10){
+//         //     System.out.println(i);
+//         //     i++;
+//         // }
+
+
+
+//         // int i=0;
+//         // while(i<10){
+//         //     if(i%2==0)
+//         //     System.out.println(i);
+//         //     i++;
+//         // }
+//     }
+// }
+
+
+// --> do-while loop
+
+// public class Example{
+//     public static void main(String args[]){
+//         int i=3;
+//         do{
+//             // int i=3;
+//             System.out.println(i);
+//             i++;
+//         }while(i<3);
+//     }
+// }
