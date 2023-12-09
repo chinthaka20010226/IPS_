@@ -388,3 +388,90 @@ import java.util.*;
 // }
 
 
+// ========================================================================================
+// ---> premitive data tyoe,
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x;
+//         x=1.23; // Error...
+//         System.out.println(x);
+//     }
+// }
+
+
+/*
+ * byte     --> 8 bits / 1 byte 
+ * short    --> 16 bits / 2 bytes
+ * int      --> 32 bits / 4 byts
+ * long     --> 64 bits / 8 bytes
+ * 
+ * float    --> 32 bits / 4 bytes
+ * double   --> 64 bits / 8 bytes
+ * 
+ * char     --> 16 bits
+ * 
+ * boolean  --> 1 bits
+ */
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         byte b=100;
+//         short s=200;
+//         int i=300;
+//         long l= 400;
+//         System.out.println(b+" "+s+" "+i+" "+l);
+
+//         float e=10.6F;
+//         double dd=1.5; // Generic
+//         System.out.println(e+" "+dd);
+
+//         char ch='A';
+//         System.out.println(ch);
+
+//         boolean bool=true;
+//         System.out.println(bool);
+//     }
+// }
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+
+//         System.out.print("Input byte number:");
+//         byte b=input.nextByte();
+
+//         System.out.print("Input short number:");
+//         short s=input.nextShort();
+
+//         System.out.print("Input integer number:");
+//         int i=input.nextInt();
+
+//         System.out.print("Input long number:");
+//         long l=input.nextLong();
+
+//         System.out.print("Input float number:");
+//         float f=input.nextFloat();
+
+//         System.out.print("Input double number:");
+//         double d=input.nextDouble();
+//     }
+// }
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.print("Input your name:");
+//         String name=input.nextLine();
+//         char ch=name.charAt(0);
+//         System.out.println(ch);
+//     }
+// }
+
+
+
+
