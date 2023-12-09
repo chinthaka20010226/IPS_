@@ -476,19 +476,55 @@ import java.util.*;
 // ==================================================================================================
 // ---> Special Characters / Escape characters
 
-public class Example{
-    public static void main(String args[]){
-        System.out.println("AB\bCD");
-        System.out.println("AB\tCD");
-        System.out.println("AB\nCD");
-        System.out.println("\"");
-        System.out.println('"');
-        System.out.println("'");
-        System.out.println("\'");
-        System.out.println('\'');
-        System.out.println("\\");
-        System.out.println('\\');
-        System.out.println("\\\\\\");
-    }
-}
+// public class Example{
+//     public static void main(String args[]){
+//         System.out.println("AB\bCD");
+//         System.out.println("AB\tCD");
+//         System.out.println("AB\nCD");
+//         System.out.println("\"");
+//         System.out.println('"');
+//         System.out.println("'");
+//         System.out.println("\'");
+//         System.out.println('\'');
+//         System.out.println("\\");
+//         System.out.println('\\');
+//         System.out.println("\\\\\\");
+//     }
+// }
 
+
+
+// =======================================================================================
+// ---> Conversion / Casting
+
+// --> Conversion -> Wider & Narrow
+
+// public class Example{
+//     public static void main(String args[]){
+//         // byte b=100;
+//         // short s=b;
+//         // System.out.println(b+" "+s);
+
+//         int age=20;
+//         long l=10;
+//         // age=age+l;
+//         age+=l;
+//         System.out.println(age);
+//     }
+// }
+
+
+// --> Casting -> Wider & Narrow
+
+// public class Example{
+//     public static void main(String rga[]){
+//         // short s=100;
+//         // byte b=(byte)s;
+//         // System.out.println(s+" "+b);
+
+
+//         int x=5,y=2;
+//         double d=(double)x/y;
+//         System.out.println(d);
+//     }
+// }
