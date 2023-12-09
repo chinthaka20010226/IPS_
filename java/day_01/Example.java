@@ -696,6 +696,7 @@ import java.util.*;
 // }
 
 
+
 // --> short circuit OR(||) VS boolean OR(|)
 
 // public class Example{
@@ -728,6 +729,7 @@ import java.util.*;
 //         System.out.println(marks >= 50 ? 'A' : 'F');
 //     }
 // }
+
 
 
 // --> switch(){}  --> byte, short, int, char, String, enum
@@ -815,6 +817,7 @@ import java.util.*;
 // }
 
 
+
 // --> variable Scope and Life Time
 
 // public class Example{
@@ -873,8 +876,65 @@ import java.util.*;
 //         {
 //             int y=300;
 //         }
-//         {
+//         { 
 //             int y=400;
 //         }
+//     }  
+// }
+
+
+
+// --> Variable Initialization...
+
+// public class Example{
+//     public static void main(String args[]){
+//         // int x;
+//         // // x=x+100;
+//         // x=100;
+//         // System.out.println(x);
+
+
+
+//         // int x;
+
+//         // {
+//         //     x=100;
+//         //     int y=200;
+//         // }
+//         // System.out.println(x);
+//         // // System.out.println(y);
+
+
+
+//         // int number=200;
+//         // int x;
+//         // if(number>100){
+//         //     x=100;
+//         // }
+//         // System.out.println(x); //Error...
+
+
+
+//         // int number=200;
+//         // int x;
+//         // if(number>100){
+//         //     x=100;
+//         // }
+//         // else{
+//         //     x=0;
+//         // }
+//         // System.out.println(x); //Not Error...
+
+
+
+//         int number=200;
+//         int x;
+//         if(101>100){
+//             x=100;
+//         }
+//         System.out.println(x); 
 //     }
 // }
+
+
+
