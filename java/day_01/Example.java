@@ -534,26 +534,179 @@ import java.util.*;
 // ---> Arithmetic Operators
 // ---> Unary, Addition, Subtraction, Division, Multiplication & Modulus
 
+// public class Example{
+//     public static void main(String args[]){
+//         // System.out.println(~17);
+//         // System.out.println(-17);
+//         // System.out.println(!true);
+
+//         // System.out.println(5+11);
+//         // System.out.println(22-11);
+//         // System.out.println(2*11);
+//         // System.out.println(22/11);
+
+//         // System.out.println(10%3);
+
+//         int x=100;
+//         System.out.println(++x);
+//         System.out.println(x++);
+//         System.out.println(x);
+
+//         char ch='A';
+//         System.out.println(ch++);
+//         System.out.println(++ch);
+//     }
+// }
+
+
+
+// ===========================================================================================
+// ---> Flow Control
+
+// --> Conditional Statements 
+
+// if
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.print("Input your age:");
+//         int age=input.nextInt();
+
+//         if(age >= 18){
+//             System.out.println("this user is eligible for the move...");
+//         }
+//         if(age < 18){
+//             System.out.println("this user is not eligible for the move...");
+//         }
+//     }
+// }
+
+
+// if-else
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.print("Input your age:");
+//         int age=input.nextInt();
+        
+//         if(age >= 18){
+//             System.out.println("this user is eligible for the move...");
+//         }
+//         else{
+//             System.out.println("this user is not eligible for the move...");
+//         }
+//     }
+// }
+
+
+// --> Relational Operators
+// --> > , < , >= , <= , == , !=
+
+// public class Example{
+//     public static void main(String args[]){
+//         int a=100,b=100;
+
+//         System.out.println("a>b:"+(a>b));
+//         System.out.println("a>=b:"+(a>=b));
+//         System.out.println("a<b:"+(a<b));
+//         System.out.println("a<=b:"+(a<=b));
+//         System.out.println("a==b:"+(a==b));
+//         System.out.println("a!=b:"+(a!=b));
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         int a=100,b=100,c=99;
+
+//         System.out.println(a=b);
+//         System.out.println(a==b);
+
+//         System.out.println(a=c);
+//         System.out.println(a==c);
+//     }
+// }
+
+
+// --> if else Ladder,
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.print("input your marks:");
+//         int marks=input.nextInt();
+
+//         if((marks>=0) & (marks<=100)){
+//             if(marks>=75) 
+//             System.out.println("A");
+//             if(marks>=65)
+//             System.out.println("B");
+//             if(marks>=45)
+//             System.out.println("C");
+//             if(marks>=25)
+//             System.out.println("D");
+//             else
+//             System.out.println("F");
+//         }
+//         else{
+//             System.out.println("Invalid marks...");
+//         }
+
+//         // if((marks>=0) & (marks<=100)){
+//         //     if(marks>=75) 
+//         //     System.out.println("A");
+//         //     else if(marks>=65)
+//         //     System.out.println("B");
+//         //     else if(marks>=45)
+//         //     System.out.println("C");
+//         //     else if(marks>=25)
+//         //     System.out.println("D");
+//         //     else
+//         //     System.out.println("F");
+//         // }
+//         // else{
+//         //     System.out.println("Invalid marks...");
+//         // }
+//     }
+// }
+
+
+// ---> Nested if
+
+// public class Example{
+//     public static void main(String rgas[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("input your age:");
+//         int age=input.nextInt();
+
+//         if(age>=18){
+//             if(age>=21){
+//                 System.out.println("Welcome to the adult area...");
+//             }
+//             else{
+//                 System.out.println("Welcome to the children area...");
+//             }
+//         }
+//         else{
+//             System.out.println("You are in wrong place...");
+//         }
+//     }
+// }
+
+
+// --> short circuit OR(||) VS boolean OR(|)
+
 public class Example{
     public static void main(String args[]){
-        // System.out.println(~17);
-        // System.out.println(-17);
-        // System.out.println(!true);
+        int a=100,b=99;
+        System.out.println(a+" "+b);
 
-        // System.out.println(5+11);
-        // System.out.println(22-11);
-        // System.out.println(2*11);
-        // System.out.println(22/11);
+        if(a++==100 || b++==99){
+            // --------
+        }
 
-        // System.out.println(10%3);
-
-        int x=100;
-        System.out.println(++x);
-        System.out.println(x++);
-        System.out.println(x);
-
-        char ch='A';
-        System.out.println(ch++);
-        System.out.println(++ch);
+        System.out.println(a+" "+b);
     }
 }
