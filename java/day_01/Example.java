@@ -714,17 +714,167 @@ import java.util.*;
 
 // --> Ternary Operator
 
-public class Example{
-    public static void main(String args[]){
-        int marks=77;
-        // char status='F';
+// public class Example{
+//     public static void main(String args[]){
+//         int marks=77;
+//         // char status='F';
 
-        // if(marks>=50){
-        //     status='A';
-        // }
-        // else{
-        //     status='F';
-        // }
-        System.out.println(marks >= 50 ? 'A' : 'F');
-    }
-}
+//         // if(marks>=50){
+//         //     status='A';
+//         // }
+//         // else{
+//         //     status='F';
+//         // }
+//         System.out.println(marks >= 50 ? 'A' : 'F');
+//     }
+// }
+
+
+// --> switch(){}  --> byte, short, int, char, String, enum
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.print("input number of day in week:");
+//         int day=input.nextInt();
+
+//         // if(day>0 && day<8){
+//         //     if(day == 1){
+//         //         System.out.println("Sunday");
+//         //     }
+//         //     else if(day == 2){
+//         //         System.out.println("Monday");
+//         //     }
+//         //     else if(day == 3){
+//         //         System.out.println("Tuesday");
+//         //     }
+//         //     else if(day == 4){
+//         //         System.out.println("Wensday");
+//         //     }
+//         //     else if(day == 5){
+//         //         System.out.println("Thursday");
+//         //     }
+//         //     else if(day == 6){
+//         //         System.out.println("Friday");
+//         //     }
+//         //     else{
+//         //         System.out.println("Saturday");
+//         //     }
+//         // }
+//         // else{
+//         //     System.out.println("Invalid number...");
+//         // }
+
+
+//         // switch(day){
+//         //     case 1:System.out.println("Sunday");break;
+//         //     case 2:System.out.println("Monday");break;
+//         //     case 3:System.out.println("Tuesday");break;
+//         //     case 4:System.out.println("Wensday");break;
+//         //     case 5:System.out.println("Thursday");break;
+//         //     case 6:System.out.println("Friday");break;
+//         //     case 7:System.out.println("Saturday");break;
+//         //     default:System.out.println("Invalid day"); //optional...
+//         // }
+
+
+//         // switch(day){
+//         //     case 1:System.out.println("Sunday");break;
+//         //     case 2:System.out.println("Monday");break;
+//         //     case 3:System.out.println("Tuesday");break;
+//         //     default:System.out.println("Invalid day");break;
+//         //     case 4:System.out.println("Wensday");break;
+//         //     case 5:System.out.println("Thursday");break;
+//         //     case 6:System.out.println("Friday");break;
+//         //     case 7:System.out.println("Saturday");break;
+//         // }
+
+
+//         // switch(day){
+//         //     case 1:System.out.println("Sunday");break;
+//         //     case 7:System.out.println("Saturday");break;
+//         //     case 2:System.out.println("Monday");break;
+//         //     case 5:System.out.println("Thursday");break;
+//         //     case 3:System.out.println("Tuesday");break;
+//         //     case 4:System.out.println("Wensday");break;
+//         //     case 6:System.out.println("Friday");break;
+//         //     default:System.out.println("Invalid day");
+//         // }
+
+
+
+//         // int a=10;
+//         // final int b=33;
+
+//         // switch(day){
+//         //     case 1:
+//         //     case b:
+//         //     // case a: // Error
+//         // }
+//     }
+// }
+
+
+// --> variable Scope and Life Time
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x=100;
+//         System.out.println(x);
+
+//         {// block
+
+//             int y=200;
+//             System.out.println(x);
+//             System.out.println(y);
+//             x++;
+//             y++;
+//         }// block
+
+//         System.out.println(x);
+//         System.out.println(y);
+//     }
+// }
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x=100;
+//         System.out.println(x);
+
+//         {// block
+
+//             int y=200;
+//             System.out.println(x);
+//             System.out.println(y);
+//             x++;
+//             y++;
+//         }// block
+
+//         // int x=300;
+//         int y=200;
+
+//         System.out.println(x);
+//         System.out.println(y);
+//     }
+// }
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         {
+//             int y=100;
+//         }
+//         {
+//             int y=200;
+//         }
+//         int y=10;
+//         {
+//             int y=300;
+//         }
+//         {
+//             int y=400;
+//         }
+//     }
+// }
