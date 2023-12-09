@@ -473,5 +473,22 @@ import java.util.*;
 // }
 
 
+// ==================================================================================================
+// ---> Special Characters / Escape characters
 
+public class Example{
+    public static void main(String args[]){
+        System.out.println("AB\bCD");
+        System.out.println("AB\tCD");
+        System.out.println("AB\nCD");
+        System.out.println("\"");
+        System.out.println('"');
+        System.out.println("'");
+        System.out.println("\'");
+        System.out.println('\'');
+        System.out.println("\\");
+        System.out.println('\\');
+        System.out.println("\\\\\\");
+    }
+}
 
