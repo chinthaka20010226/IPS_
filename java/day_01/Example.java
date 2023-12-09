@@ -698,15 +698,33 @@ import java.util.*;
 
 // --> short circuit OR(||) VS boolean OR(|)
 
+// public class Example{
+//     public static void main(String args[]){
+//         int a=100,b=99;
+//         System.out.println(a+" "+b);
+
+//         if(a++==100 | b++==99){
+//             // --------
+//         }
+
+//         System.out.println(a+" "+b);
+//     }
+// }
+
+
+// --> Ternary Operator
+
 public class Example{
     public static void main(String args[]){
-        int a=100,b=99;
-        System.out.println(a+" "+b);
+        int marks=77;
+        // char status='F';
 
-        if(a++==100 || b++==99){
-            // --------
-        }
-
-        System.out.println(a+" "+b);
+        // if(marks>=50){
+        //     status='A';
+        // }
+        // else{
+        //     status='F';
+        // }
+        System.out.println(marks >= 50 ? 'A' : 'F');
     }
 }
