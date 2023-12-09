@@ -1030,21 +1030,64 @@ import java.util.*;
 
 // --> break, continue
 
+// public class Example{
+//     public static void main(String args[]){
+//         // for(int i=0;i<10;i++){
+//         //     if(i==5){
+//         //         break;
+//         //     }
+//         //     System.out.println(i);
+//         // }
+
+
+//         for(int i=0;i<10;i++){
+//             if(i==5){
+//                 continue;
+//             }
+//             System.out.println(i);
+//         }
+//     }
+// }
+
+
+
+
+
+// ================================================================================================
+// --> Methods
+
+// public class Example{
+//     public static void main(String args[]){
+//         System.out.println("214189E");
+//         System.out.println("Chinthaka Senarathna");
+//         System.out.println("0719268621");
+//         System.out.println("Meril De Silwa Rd, Elahera");
+
+//         System.out.println("214189E");
+//         System.out.println("Chinthaka Senarathna");
+//         System.out.println("0719268621");
+//         System.out.println("Meril De Silwa Rd, Elahera");
+
+//         System.out.println("214189E");
+//         System.out.println("Chinthaka Senarathna");
+//         System.out.println("0719268621");
+//         System.out.println("Meril De Silwa Rd, Elahera");
+//     }
+// }
+
+
 public class Example{
+    public static void printData(){
+        System.out.println("214189E");
+        System.out.println("Chinthaka Senarathna");
+        System.out.println("0719268621");
+        System.out.println("Meril De Silwa Rd, Elahera");
+    }
+
     public static void main(String args[]){
-        // for(int i=0;i<10;i++){
-        //     if(i==5){
-        //         break;
-        //     }
-        //     System.out.println(i);
-        // }
-
-
-        for(int i=0;i<10;i++){
-            if(i==5){
-                continue;
-            }
-            System.out.println(i);
-        }
+        // Method Invoke....
+        printData();
+        printData();
+        printData();
     }
 }
