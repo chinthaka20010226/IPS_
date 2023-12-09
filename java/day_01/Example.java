@@ -528,3 +528,32 @@ import java.util.*;
 //         System.out.println(d);
 //     }
 // }
+
+
+// ===================================================================================================
+// ---> Arithmetic Operators
+// ---> Unary, Addition, Subtraction, Division, Multiplication & Modulus
+
+public class Example{
+    public static void main(String args[]){
+        // System.out.println(~17);
+        // System.out.println(-17);
+        // System.out.println(!true);
+
+        // System.out.println(5+11);
+        // System.out.println(22-11);
+        // System.out.println(2*11);
+        // System.out.println(22/11);
+
+        // System.out.println(10%3);
+
+        int x=100;
+        System.out.println(++x);
+        System.out.println(x++);
+        System.out.println(x);
+
+        char ch='A';
+        System.out.println(ch++);
+        System.out.println(++ch);
+    }
+}
