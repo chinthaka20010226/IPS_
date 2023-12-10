@@ -212,19 +212,55 @@ import javax.swing.JFrame;
 
 // ---> NullPointerException
 
-class Product{
-    int id;
+// class Product{
+//     int id;
 
-    void printId(){
-        System.out.println(id);
+//     void printId(){
+//         System.out.println(id);
+//     }
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Product p1=null;
+
+//         p1.id=001;
+//         p1.printId();  // NullPointerException
+//     }
+// } 
+
+
+
+
+
+
+// ===================================================================================
+// ---> static...
+
+class Car{
+    int year;
+    static int wheel;
+
+    void printData(){
+        System.out.println("Year : "+year+" - "+"Wheel : "+wheel);
     }
 }
 
-class Example{
+public class Example{
     public static void main(String args[]){
-        Product p1=null;
+        Car c1=new Car();
+        c1.year=2001;
+        c1.wheel=4;
+        c1.printData();
 
-        p1.id=001;
-        p1.printId();  // NullPointerException
+        Car c2=new Car();
+        c2.year=2003;
+        c2.wheel=3;
+        c2.printData();
+
+        System.out.println("=========================");
+
+        c1.printData();
+        c2.printData();
     }
-} 
+}
