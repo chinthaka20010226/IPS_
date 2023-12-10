@@ -121,25 +121,67 @@ import javax.swing.JFrame;
 // --> Methods
 // --> Reference Variables
 
-public class Example{
-    public static void main(String args[]){
-        JFrame f1;       // create a reference variable
-        f1=new JFrame(); // create an object
-        f1.setSize(400,400);
-        f1.setTitle("Form 1");
-        f1.setDefaultCloseOperation(3);
-        f1.setLocationRelativeTo(null);
-        f1.setVisible(true);
+// public class Example{
+//     public static void main(String args[]){
+//         JFrame f1;       // create a reference variable
+//         f1=new JFrame(); // create an object
+//         f1.setSize(400,400);
+//         f1.setTitle("Form 1");
+//         f1.setDefaultCloseOperation(3);
+//         f1.setLocationRelativeTo(null);
+//         f1.setVisible(true);
 
 
-        try{Thread.sleep(5000);}
-        catch(Exception e){}
+//         try{Thread.sleep(5000);}
+//         catch(Exception e){}
 
 
-        f1.setSize(600,600);
-        f1.setTitle("Form 2");
-        f1.setDefaultCloseOperation(3);
-        f1.setLocationRelativeTo(null);
-        f1.setVisible(true);
+//         f1.setSize(600,600);
+//         f1.setTitle("Form 2");
+//         f1.setDefaultCloseOperation(3);
+//         f1.setLocationRelativeTo(null);
+//         f1.setVisible(true);
+//     }
+// }
+
+
+// ==========================================================================================
+
+
+// ---> this,
+
+class Box{
+    int a;
+    void print(){
+        System.out.println(this);
     }
 }
+
+class Example{
+    public static void main(String args[]){
+        Box b1=new Box();
+        b1.print();
+        System.out.println(b1);
+    }
+}
+
+
+
+class Box{
+    int width;
+    void setWidth(int width){
+        this.width=width;
+    }
+}
+
+class Example{
+    public static void main(String args[]){
+        Box b1=new Box();
+        b1.setWidth(3);
+        System.out.println(b1.width);
+    }
+}
+
+
+
+
