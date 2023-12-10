@@ -150,38 +150,81 @@ import javax.swing.JFrame;
 
 // ---> this,
 
-class Box{
-    int a;
-    void print(){
-        System.out.println(this);
+// class Box{
+//     int a;
+//     void print(){
+//         System.out.println(this);
+//     }
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Box b1=new Box();
+//         b1.print();
+//         System.out.println(b1);
+//     }
+// }
+
+
+
+// class Box{
+//     int width;
+//     void setWidth(int width){
+//         this.width=width;
+//     }
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Box b1=new Box();
+//         b1.setWidth(3);
+//         System.out.println(b1.width);
+//     }
+// }
+
+
+
+
+// class Customer{
+//     //
+// }
+
+// class Product{
+//     //
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Customer c1;
+//         Product p1;
+
+//         c1=new Customer();
+//         // c1=new Product(); // Error...
+
+//         p1=new Product();
+//         // p1=new Customer(); // Error...
+//     }
+// } 
+
+
+
+
+
+// ---> NullPointerException
+
+class Product{
+    int id;
+
+    void printId(){
+        System.out.println(id);
     }
 }
 
 class Example{
     public static void main(String args[]){
-        Box b1=new Box();
-        b1.print();
-        System.out.println(b1);
+        Product p1=null;
+
+        p1.id=001;
+        p1.printId();  // NullPointerException
     }
-}
-
-
-
-class Box{
-    int width;
-    void setWidth(int width){
-        this.width=width;
-    }
-}
-
-class Example{
-    public static void main(String args[]){
-        Box b1=new Box();
-        b1.setWidth(3);
-        System.out.println(b1.width);
-    }
-}
-
-
-
-
+} 
