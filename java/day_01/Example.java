@@ -1076,18 +1076,291 @@ import java.util.*;
 // }
 
 
+// public class Example{
+//     public static void printData(){
+//         System.out.println("214189E");
+//         System.out.println("Chinthaka Senarathna");
+//         System.out.println("0719268621");
+//         System.out.println("Meril De Silwa Rd, Elahera");
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke....
+//         printData();
+//         printData();
+//         printData();
+//     }
+// }
+
+
+
+// public class Example{
+//     public static void printSum(){
+//         Scanner input=new Scanner(System.in);
+
+//         System.out.println("input number one:");
+//         int num1=input.nextInt();
+
+//         System.out.println("input number two:");
+//         int num2=input.nextInt();
+
+//         int tot=num1+num2;
+//         System.out.println(num1+" + "+num2+" = "+tot);
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke....
+//         printSum();
+//     }
+// }
+
+
+// public class Example{
+//     //parameterize methods...
+//     public static void printSum(int num1,int num2){
+//         System.out.println(num1+" + "+num2+" = "+(num1+num2));
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke....
+//         printSum(22,11);
+//     }
+// }
+
+
+
+// public class Example{
+//     //parameterize methods...
+//     public static int getSum(int num1,int num2){
+//         return num1+num2;
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke....
+//         int tot=getSum(22,11);
+//         System.out.println(tot);
+//     }
+// }
+
+
+
+// public class Example{
+//     //parameterize methods...
+//     public static int getDigitsCount(int num){
+//         int count=0;
+//         do{
+//             count++;
+//         }while((num/10) != 0);
+//         return count;
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke....
+//         int tot=getDigitsCount(123);
+//         System.out.println(tot);
+//     }
+// }
+
+
+
+// public class Example{
+//     //parameterize methods...
+//     public static int getDigitsCountSum(int num){
+//         int sum=0;
+//         while(num != 0){
+//             sum+=num%10;
+//             num/=10;
+//         }
+//         return sum;
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke....
+//         int sum=getDigitsCountSum(2516);
+//         System.out.println(sum);
+//     }
+// }
+
+
+
+// public class Example{
+//     //parameterize methods...
+//     public static char findGrade(int marks){
+//         char grade='F';
+
+//         if((marks>=0) & (marks<=100)){
+//             if(marks>=75){
+//                 grade='A';
+//             }
+//             else if(marks>=65){
+//                 grade='B';
+//             }
+//             else if(marks>=55){
+//                 grade='C';
+//             }
+//         }
+//         else{
+//             System.out.println("Invalid marks...");
+//         }
+//         return grade;
+//     }
+
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("input your marks:");
+//         int marks=input.nextInt();
+//         // Method Invoke....
+//         System.out.println("Your grade is "+findGrade(55));
+//     }
+// }
+
+
+
+// --->  Method Calling Stack...
+
+
+// public class Example{
+//     //parameterize methods...
+//     public static void print(){
+        
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke...
+//         print();
+//     }
+// }
+
+
+
+// public class Example{
+//     //parameterize methods...
+//     public static int increment(int x){
+//         // return x++;
+//         return ++x;
+//     }
+
+//     public static void main(String args[]){
+//         int x=100;
+
+//         System.out.println("before increment, x:"+x);
+//         // Method Invoke...
+//         x=increment(x);
+//         System.out.println("after increment, x:"+x);
+//     }
+// }
+
+
+
+// ---> Rules for Methods Declaration...
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x=100;
+
+//         System.out.println("before increment, x:"+x);
+//         // Method Invoke...
+//         x=increment(x);
+//         System.out.println("after increment, x:"+x);
+//     }
+
+//     public static int increment(int x){
+//         // return x++;
+//         return ++x;
+//     }
+// }
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         int x=100;
+
+//         System.out.println("before increment, x:"+x);
+//         // Method Invoke...
+//         x=XXX.increment(x);
+//         System.out.println("after increment, x:"+x);
+//     }
+// }
+
+// class XXX{
+//     public static int increment(int x){
+//         // return x++;
+//         return ++x;
+//     }
+// }
+
+
+
+
+// public class Example{
+//     public static void increment(){
+//         System.out.println("inside the Example class");
+//     }
+
+//     public static void main(String args[]){
+//         // Method Invoke...
+//         increment();
+//         XXX.increment();
+//     }
+// }
+
+// class XXX{
+//     public static void increment(){
+//         System.out.println("inside the XXX class");
+//     }
+// }
+
+
+
+
+// public class Example{
+//     public static void print(int x){}
+
+//     public static void main(String args[]){
+//         byte b=100;
+//         short s=200;
+//         int i=12;
+//         long l=1234;
+
+//         float e=1.23f;
+//         double d=1.23;
+
+//         char ch='A';
+
+//         boolean bool=true;
+
+//         print(b);       // wider conversion
+//         print(s);       // wider conversion
+//         print(i);       
+//         print((int)l);  // narrow casting
+//         print((int)e);  // narrow casting
+//         print((int)d);  // narrow casting
+//         print(ch);
+//         print();
+//     }
+// }
+
+
+
+// --> return type.....
+
 public class Example{
-    public static void printData(){
-        System.out.println("214189E");
-        System.out.println("Chinthaka Senarathna");
-        System.out.println("0719268621");
-        System.out.println("Meril De Silwa Rd, Elahera");
+    public static void print(){
+        System.out.println("start print");
+        for(int i=0;i<10;i++){
+            if(i==5){
+                return;
+            }
+            System.out.println(i);
+        }
+        System.out.println("end print");
     }
 
     public static void main(String args[]){
-        // Method Invoke....
-        printData();
-        printData();
-        printData();
+        System.out.println("start main");
+        print();
+        System.out.println("end main");
     }
 }
