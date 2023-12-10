@@ -1502,3 +1502,56 @@ import java.util.*;
 
 
 
+
+// ---> Arrays,
+
+public class Example{
+    public static void main(String args[]){
+        Scanner input=new Scanner(System.in);
+        int a,b,c,d,e,f,g,h,i,j;
+
+        System.out.print("insert number one:");
+        a=input.nextInt();
+
+        System.out.print("insert number two:");
+        b=input.nextInt();
+
+        System.out.print("insert number three:");
+        c=input.nextInt();
+
+        System.out.print("insert number four:");
+        d=input.nextInt();
+
+        System.out.print("insert number five:");
+        e=input.nextInt();
+
+        System.out.print("insert number six:");
+        f=input.nextInt();
+
+        System.out.print("insert number seven:");
+        g=input.nextInt();
+
+        System.out.print("insert number eight:");
+        h=input.nextInt();
+
+        System.out.print("insert number nine:");
+        i=input.nextInt();
+
+        System.out.print("insert number ten:");
+        j=input.nextInt();
+
+        int tot=0;
+        tot+=a;
+        tot+=b;
+        tot+=c;
+        tot+=d;
+        tot+=e;
+        tot+=f;
+        tot+=g;
+        tot+=h;
+        tot+=i;
+        tot+=j;
+
+        System.out.println("Total is "+tot);
+    }
+}
