@@ -443,46 +443,274 @@ import javax.swing.JFrame;
 // ===============================================================================================
 // instance block...
 
-class Box{
-    int width=1;
-    int length=2;
-    int height=3;
+// class Box{
+//     int width=1;
+//     int length=2;
+//     int height=3;
 
-    { // instance block...
-        width=12;
-        length=20;
-        height=5;
-        System.out.println("instance block");
+//     { // instance block...
+//         width=12;
+//         length=20;
+//         height=5;
+//         System.out.println("instance block");
+//     }
+
+//     Box(){
+//         System.out.println("constructor");
+//     }
+
+//     /*
+//      * int width;
+//      * int length;
+//      * int height;
+//      * 
+//      * {// instance block...
+//         // insert into Constructor...by Compiler
+//         }
+
+//         Box(){
+//             width=12;
+//             length=20;
+//             height=5;
+//             System.out.println("instance block");
+//             System.out.println("constructor");
+//         }
+//      */
+// }
+
+// public class Example{
+//     public static void main(String ars[]){
+//         Box b1=new Box();
+//         System.out.println(b1.width);
+//         System.out.println(b1.length);
+//         System.out.println(b1.height);
+//     }
+// }
+
+
+
+
+
+
+// class A{
+//     int a;
+
+//     {
+//         a=10;
+//     }
+
+//     /*
+//      * class A{
+//      * int a;
+//      * 
+//      * {
+//      *    // insert into Constructor....by compiler
+//      * }
+//      * 
+//      * A(){
+//      *    a=10;
+//      * }
+//      * 
+//      * }
+//      */
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         A a1=new A();
+//         System.out.println(a1.a);
+//     }
+// }
+
+
+
+
+// class A{
+//     int a=33;
+
+//     A(){
+//         System.out.println("Constructor");
+//         a=100;
+//     }
+
+//     {
+//         System.out.println("instance block");
+//         a=10;
+//     }
+
+//     /*
+//      * class A{
+//      *    int a;
+//      * 
+//      *    {
+//             // inert into Constructor....by compiler
+//             }
+//      * 
+//      *     A(){
+//      *          a=33;
+//      *          System.out.println("instance block");
+//                 a=10;
+//                 System.out.println("Constructor");
+//                 a=100;
+//             } 
+//      * }
+//      */
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         A a1=new A();
+//         System.out.println(a1.a);
+//     }
+// }
+
+
+
+
+
+// class A{
+//     int a;
+
+//     A(){
+//         System.out.println("Constructor");
+//         a=100;
+//     }
+
+//     {
+//         System.out.println("instance block");
+//         a=10;
+//     }
+
+//     A(int x){
+//         a=x;
+//     }
+// }
+
+// /*
+//  * class A{
+//     int a;
+
+//     A(){
+//         System.out.println("instance block");
+//         a=10;
+//         System.out.println("Constructor");
+//         a=100;
+//     }
+
+//     {
+//         // insert into Constructor...by compiler
+//     }
+
+//     A(int x){
+//         System.out.println("instance block");
+//         a=10;
+//         a=x;
+//     }
+// }
+//  */
+
+// public class Example{
+//     public static void main(String args[]){
+//         A a1=new A();
+//         System.out.println(a1.a);
+
+//         A a2=new A(3);
+//         System.out.println(a2.a);
+//     }
+// }
+
+
+
+
+// class A{
+//     int a=11;
+
+//     A(){
+//         System.out.println("Constructor");
+//         a=100;
+//     }
+
+//     {
+//         System.out.println("instance block");
+//         a=10;
+//     }
+
+//     A(int x){
+//         a=x;
+//     }
+// }
+
+// /*
+//  * class A{
+//     int a;
+
+//     A(){
+//         a=11;
+//         System.out.println("instance block");
+//         a=10;
+//         System.out.println("Constructor");
+//         a=100;
+//     }
+
+//     {
+//         // insert into Constructor....by compiler
+//     }
+
+//     A(int x){
+//         a=11;
+//         System.out.println("instance block");
+//         a=10;
+//         a=x;
+//     }
+// }
+//  */
+
+// public class Example{
+//     public static void main(String args[]){
+//         A a1=new A();
+//         System.out.println(a1.a);
+
+//         A a2=new A(3);
+//         System.out.println(a2.a);
+//     }
+// }
+
+
+
+
+
+class A{
+    int a=10;
+
+    {
+        a=100;
+        b=200;
     }
 
-    Box(){
-        System.out.println("constructor");
-    }
-
-    /*
-     * int width;
-     * int length;
-     * int height;
-     * 
-     * {// instance block...
-        // insert into Constructor...by Compiler
-        }
-
-        Box(){
-            width=12;
-            length=20;
-            height=5;
-            System.out.println("instance block");
-            System.out.println("constructor");
-        }
-     */
+    int b=20;
 }
 
+/*
+ * class A{
+    int a;
+    int b;
+
+    {
+        // insert into Constructor...by compiler
+    }
+
+    A(){
+        a=10;
+        a=100;
+        b=200;
+        b=20;
+    }
+}
+ */
+
 public class Example{
-    public static void main(String ars[]){
-        Box b1=new Box();
-        System.out.println(b1.width);
-        System.out.println(b1.length);
-        System.out.println(b1.height);
+    public static void main(String args[]){
+        A a1=new A();
+        System.out.println("a : "+a1.a+" b : "+a1.b);
     }
 }
