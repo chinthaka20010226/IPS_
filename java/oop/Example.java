@@ -318,22 +318,120 @@ import javax.swing.JFrame;
 
 
 
-class Box{
-    int width;
+// class Box{
+//     int width;
 
-    Box(int width){
-        this.width=width;
-        System.out.println("Constructor...");
+//     Box(int width){
+//         this.width=width;
+//         System.out.println("Constructor...");
+//     }
+
+//     void printWidth(){
+//         System.out.println(width);
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Box b1=new Box(3);  // pass the referene of created object...
+//         b1.printWidth();
+//     }
+// }
+
+
+
+
+// ---> Declaration Value...
+
+// class Box{
+//     int width;
+
+//     Box(){
+//         width=0;
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Box b1=new Box();  // pass the referene of created object...
+        
+//     }
+// }
+
+
+
+
+
+// class A{
+//     int a=10;
+//     int b=20;
+
+//     /* Compiler insert
+
+//     int a;
+//     int b;
+
+//     A(){
+//         a=10;
+//         b=20;
+//     }
+
+//      */
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         A a1=new A();  // pass the referene of created object...
+//     }
+// }
+
+
+
+
+class A{
+    int a=10;
+    int b=20;
+
+    A(){
+        a=100;
+    }
+    A(int x){
+        a=x;
+    }
+    A(int x,int y){
+        a=x;
+        b=y;
     }
 
-    void printWidth(){
-        System.out.println(width);
+    /* Compiler insert
+
+    int a;
+    int b;
+
+    A(){
+        a=10;
+        b=20;
+        a=100;
     }
+
+    A(int x){
+        a=10;
+        b=20;
+        a=x;
+    }
+
+    A(int x,int y){
+        a=10;
+        b=20;
+        a=x;
+        b=y;
+    }
+
+     */
 }
 
 public class Example{
     public static void main(String args[]){
-        Box b1=new Box(3);  // pass the referene of created object...
-        b1.printWidth();
+        A a1=new A();  // pass the referene of created object...
     }
 }
