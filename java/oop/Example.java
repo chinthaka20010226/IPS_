@@ -1,4 +1,5 @@
 import java.util.*;
+import javax.swing.JFrame;
 
 // public class Example{
 //     public static void main(String args[]){
@@ -25,34 +26,120 @@ import java.util.*;
 
 
 
-class Box{
-    int length;
-    int width;
-    int height;
+// class Box{
+//     int length;
+//     int width;
+//     int height;
 
-    void setSize(int x,int y,int z){
-        length=x;
-        width=y;
-        height=z;
-    }
+//     void setSize(int x,int y,int z){
+//         length=x;
+//         width=y;
+//         height=z;
+//     }
 
-    void printVolume(){
-        System.out.println("Volume of box : "+(length*width*height));
-    }
+//     void printVolume(){
+//         System.out.println("Volume of box : "+(length*width*height));
+//     }
 
-    void printArea(){
-        System.out.println("Area of box : "+(2*length*width+2*length*height+2*width*height));
-    }
-}
+//     void printArea(){
+//         System.out.println("Area of box : "+(2*length*width+2*length*height+2*width*height));
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Box box1=new Box();
+//         box1.setSize(3,2,1);
+//         box1.printVolume();
+//         box1.printArea();
+
+//         // Box box2=null;
+//         // box2.length=2;  // NullPointerException
+//     }
+// }
+
+
+
+
+
+
+// class Box{
+//     int length;
+//     int width;
+//     int height;
+
+//     void setSize(int x,int y,int z){
+//         length=x;
+//         width=y;
+//         height=z;
+//     }
+
+//     void setWidth(int x){
+//         width=x;
+//     }
+
+//     void setLength(int x){
+//         length=x;
+//     }
+
+//     void setHeight(int x){
+//         height=x;
+//     }
+
+//     void printVolume(){
+//         System.out.println("Volume of box : "+(length*width*height));
+//     }
+
+//     void printArea(){
+//         System.out.println("Area of box : "+(2*width*height+2*length*height+2*width*length));
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Box box1=new Box();
+//         box1.setSize(3,2,1);
+//         box1.printVolume();
+//         box1.printArea();
+
+//         box1.setLength(5);
+//         box1.setWidth(3);
+//         box1.setHeight(2);
+//         box1.printVolume();
+//         box1.printArea();
+//     }
+// }
+
+
+
+
+
+
+// --> Template
+// --> Object
+// --> Attributes
+// --> Methods
+// --> Reference Variables
 
 public class Example{
     public static void main(String args[]){
-        Box box1=new Box();
-        box1.setSize(3,2,1);
-        box1.printVolume();
-        box1.printArea();
+        JFrame f1;       // create a reference variable
+        f1=new JFrame(); // create an object
+        f1.setSize(400,400);
+        f1.setTitle("Form 1");
+        f1.setDefaultCloseOperation(3);
+        f1.setLocationRelativeTo(null);
+        f1.setVisible(true);
 
-        // Box box2=null;
-        // box2.length=2;  // NullPointerException
+
+        try{Thread.sleep(5000);}
+        catch(Exception e){}
+
+
+        f1.setSize(600,600);
+        f1.setTitle("Form 2");
+        f1.setDefaultCloseOperation(3);
+        f1.setLocationRelativeTo(null);
+        f1.setVisible(true);
     }
 }
