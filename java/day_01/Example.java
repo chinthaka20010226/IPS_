@@ -1380,17 +1380,125 @@ import java.util.*;
 
 
 
-public class Example{
-    public static boolean getGrade(int marks){
-        if(marks>=50){
-            return true;
-        }
-        return false;
-    }
+// public class Example{
+//     public static boolean getGrade(int marks){
+//         if(marks>=50){
+//             return true;
+//         }
+//         return false;
+//     }
 
-    public static void main(String args[]){
-        if(getGrade(55)){
-            System.out.println("You can attend...");
-        }
-    }
-}
+//     public static void main(String args[]){
+//         if(getGrade(55)){
+//             System.out.println("You can attend...");
+//         }
+//     }
+// }
+
+
+
+
+// ---> Method Overloading,
+
+// public class Example{
+//     public static void getGrade(){
+//         getGrade();
+//     }
+
+//     public static void main(String args[]){
+//         getGrade();
+//     }
+// }
+
+
+
+
+// public class Example{
+//     public static void getGrade(int x){
+//         //
+//     }
+
+//     public static void getGrade(int x,int y){
+//         //
+//     }
+
+//     public static void main(String args[]){
+//         getGrade(10);
+//         getGrade(10,20);
+//     }
+// }
+
+
+
+
+// public class Example{
+//     public static void getGrade(int x){
+//         //
+//     }
+
+//     public static void getGrade(long x){
+//         //
+//     }
+
+//     public static void main(String args[]){
+//         getGrade(10);
+//         getGrade(10);
+//     }
+// }
+
+
+
+
+// public class Example{
+//     public static void getGrade(int x,double y){
+//         //
+//     }
+
+//     public static void getGrade(double x,int y){
+//         //
+//     }
+
+//     public static void main(String args[]){
+//         // getGrade(10,5);   // Both can apply....
+//         getGrade(10,1.23);
+//         getGrade(1.23,10);
+//     }
+// }
+
+
+
+
+
+// public class Example{
+//     public static void getGrade(int x){
+//         //
+//     }
+
+//     public static void getGrade(int y){
+//         //
+//     }
+
+//     public static void main(String args[]){
+//         getGrade(10);
+//     }
+// }
+
+
+
+// public class Example{
+//     public static int getGrade(int x){
+//         return 11;
+//     }
+
+//     public static boolean getGrade(int x){
+//         return true;
+//     }
+
+//     public static void main(String args[]){
+//         getGrade(10);
+//     }
+// }
+
+
+
+
