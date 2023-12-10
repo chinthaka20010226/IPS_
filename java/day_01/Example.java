@@ -1738,14 +1738,34 @@ import java.util.*;
 
 
 
-public class Example{
-    public static void main(String args[]){
-        int[] a;     // ok
-        int []b;     // ok 
-        int c[];     // ok
-        // int d[10];   // Not Okay
-    }
-}
+
+// public class Example{
+//     public static void main(String args[]){
+//         // int[] a;     // ok
+//         // int []b;     // ok 
+//         // int c[];     // ok
+//         // // int d[10];   // Not Okay
+
+
+//         // int[] a=new int[5];
+//         // int[] x;
+//         // x=new int[5];
+//         // // int[] b=new int[]; // Error...
+
+
+//         // int[] c={1,2,3,4,5,6};
+//         // // int[] d;
+//         // // d={1,2,3,4,5,6}; // Error...
+
+
+//         // int[] e=new int[]{1,2,3,4,5,6};
+//         // int[] f;
+//         // f=new int[]{1,2,3,4,5,6}; // Ok...
+//         // int[] g=new int[5]{1,2,3,4,5}; // Error...
+//     }
+// }
+
+
 
 
 
