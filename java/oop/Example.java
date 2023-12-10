@@ -388,50 +388,101 @@ import javax.swing.JFrame;
 
 
 
-class A{
-    int a=10;
-    int b=20;
+// class A{
+//     int a=10;
+//     int b=20;
 
-    A(){
-        a=100;
+//     A(){
+//         a=100;
+//     }
+//     A(int x){
+//         a=x;
+//     }
+//     A(int x,int y){
+//         a=x;
+//         b=y;
+//     }
+
+//     /* Compiler insert
+
+//     int a;
+//     int b;
+
+//     A(){
+//         a=10;
+//         b=20;
+//         a=100;
+//     }
+
+//     A(int x){
+//         a=10;
+//         b=20;
+//         a=x;
+//     }
+
+//     A(int x,int y){
+//         a=10;
+//         b=20;
+//         a=x;
+//         b=y;
+//     }
+
+//      */
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         A a1=new A();  // pass the referene of created object...
+//     }
+// }
+
+
+
+
+
+// ===============================================================================================
+// instance block...
+
+class Box{
+    int width=1;
+    int length=2;
+    int height=3;
+
+    { // instance block...
+        width=12;
+        length=20;
+        height=5;
+        System.out.println("instance block");
     }
-    A(int x){
-        a=x;
-    }
-    A(int x,int y){
-        a=x;
-        b=y;
+
+    Box(){
+        System.out.println("constructor");
     }
 
-    /* Compiler insert
+    /*
+     * int width;
+     * int length;
+     * int height;
+     * 
+     * {// instance block...
+        // insert into Constructor...by Compiler
+        }
 
-    int a;
-    int b;
-
-    A(){
-        a=10;
-        b=20;
-        a=100;
-    }
-
-    A(int x){
-        a=10;
-        b=20;
-        a=x;
-    }
-
-    A(int x,int y){
-        a=10;
-        b=20;
-        a=x;
-        b=y;
-    }
-
+        Box(){
+            width=12;
+            length=20;
+            height=5;
+            System.out.println("instance block");
+            System.out.println("constructor");
+        }
      */
 }
 
 public class Example{
-    public static void main(String args[]){
-        A a1=new A();  // pass the referene of created object...
+    public static void main(String ars[]){
+        Box b1=new Box();
+        System.out.println(b1.width);
+        System.out.println(b1.length);
+        System.out.println(b1.height);
     }
 }
