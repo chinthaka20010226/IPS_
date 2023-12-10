@@ -237,30 +237,103 @@ import javax.swing.JFrame;
 // ===================================================================================
 // ---> static...
 
-class Car{
-    int year;
-    static int wheel;
+// class Car{
+//     int year;
+//     static int wheel;
 
-    void printData(){
-        System.out.println("Year : "+year+" - "+"Wheel : "+wheel);
+//     void printData(){
+//         System.out.println("Year : "+year+" - "+"Wheel : "+wheel);
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Car c1=new Car();
+//         c1.year=2001;
+//         c1.wheel=4;
+//         c1.printData();
+
+//         Car c2=new Car();
+//         c2.year=2003;
+//         c2.wheel=3;
+//         c2.printData();
+
+//         System.out.println("=========================");
+
+//         c1.printData();
+//         c2.printData();
+//     }
+// }
+
+
+
+
+// ======================================================================================
+// ---> Constructor...
+
+// class Box{
+//     int width;
+
+//     // Compiler inserts (default constructor)
+//     // Method name=Class name, No return type(void)
+//     Box(){
+//         System.out.println("Constructor...");
+//     }
+
+//     void printWidth(){
+//         System.out.println(width);
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Box b1=new Box(); // call Constructor...
+//     }
+// }
+
+
+
+
+
+// class Box{
+//     int width;
+
+//     Box(int width){
+//         this.width=width;
+//         System.out.println("Constructor...");
+//     }
+
+//     void printWidth(){
+//         System.out.println(width);
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Box b1=new Box(3);
+//         b1.printWidth();
+//     }
+// }
+
+
+
+
+class Box{
+    int width;
+
+    Box(int width){
+        this.width=width;
+        System.out.println("Constructor...");
+    }
+
+    void printWidth(){
+        System.out.println(width);
     }
 }
 
 public class Example{
     public static void main(String args[]){
-        Car c1=new Car();
-        c1.year=2001;
-        c1.wheel=4;
-        c1.printData();
-
-        Car c2=new Car();
-        c2.year=2003;
-        c2.wheel=3;
-        c2.printData();
-
-        System.out.println("=========================");
-
-        c1.printData();
-        c2.printData();
+        Box b1=new Box(3);  // pass the referene of created object...
+        b1.printWidth();
     }
 }
