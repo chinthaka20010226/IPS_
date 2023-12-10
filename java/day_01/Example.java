@@ -1346,21 +1346,51 @@ import java.util.*;
 
 // --> return type.....
 
+// public class Example{
+//     public static void print(){
+//         System.out.println("start print");
+//         for(int i=0;i<10;i++){
+//             if(i==5){
+//                 return;
+//             }
+//             System.out.println(i);
+//         }
+//         System.out.println("end print");
+//     }
+
+//     public static void main(String args[]){
+//         System.out.println("start main");
+//         print();
+//         System.out.println("end main");
+//     }
+// }
+
+
+
+
+// public class Example{
+//     public static int printTotal(int a,int b){
+//         return a+b;
+//     }
+
+//     public static void main(String args[]){
+//         System.out.println("Summation is "+printTotal(10,20));
+//     }
+// }
+
+
+
 public class Example{
-    public static void print(){
-        System.out.println("start print");
-        for(int i=0;i<10;i++){
-            if(i==5){
-                return;
-            }
-            System.out.println(i);
+    public static boolean getGrade(int marks){
+        if(marks>=50){
+            return true;
         }
-        System.out.println("end print");
+        return false;
     }
 
     public static void main(String args[]){
-        System.out.println("start main");
-        print();
-        System.out.println("end main");
+        if(getGrade(55)){
+            System.out.println("You can attend...");
+        }
     }
 }
