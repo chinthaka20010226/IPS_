@@ -1505,53 +1505,247 @@ import java.util.*;
 
 // ---> Arrays,
 
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         int a,b,c,d,e,f,g,h,i,j;
+
+//         System.out.print("insert number one:");
+//         a=input.nextInt();
+
+//         System.out.print("insert number two:");
+//         b=input.nextInt();
+
+//         System.out.print("insert number three:");
+//         c=input.nextInt();
+
+//         System.out.print("insert number four:");
+//         d=input.nextInt();
+
+//         System.out.print("insert number five:");
+//         e=input.nextInt();
+
+//         System.out.print("insert number six:");
+//         f=input.nextInt();
+
+//         System.out.print("insert number seven:");
+//         g=input.nextInt();
+
+//         System.out.print("insert number eight:");
+//         h=input.nextInt();
+
+//         System.out.print("insert number nine:");
+//         i=input.nextInt();
+
+//         System.out.print("insert number ten:");
+//         j=input.nextInt();
+
+//         int tot=0;
+//         tot+=a;
+//         tot+=b;
+//         tot+=c;
+//         tot+=d;
+//         tot+=e;
+//         tot+=f;
+//         tot+=g;
+//         tot+=h;
+//         tot+=i;
+//         tot+=j;
+
+//         System.out.println("Total is "+tot);
+//     }
+// }
+
+
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         int[] arr=new int[10];
+//         int tot=0;
+
+//         for(int i=0;i<arr.length;i++){
+//             System.out.print("input number "+(i+1)+":");
+//             arr[i]=input.nextInt();
+//         }
+
+//         for(int x:arr){
+//             tot+=x;
+//         }
+
+//         System.out.println(Arrays.toString(arr));
+//         System.out.println("Total is "+tot);
+//     }
+// }
+
+
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         Random random=new Random();
+//         int[] arr=new int[10];
+
+//         // get inputs...
+//         for(int i=0;i<arr.length;i++){
+//             arr[i]=random.nextInt(100);
+//         }
+
+//         // System.out.println(Arrays.toString(arr));
+//         // read elements...
+//         System.out.print("[");
+//         for(int x:arr){
+//             System.out.print(x+", ");
+//         }
+//         System.out.print("\b\b]");
+//     }
+// }
+
+
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         Random random=new Random();
+//         int[] arr=new int[10];
+//         int tot=0;
+//         int max=Integer.MIN_VALUE;
+//         int min=Integer.MAX_VALUE;
+
+//         // get inputs...
+//         for(int i=0;i<arr.length;i++){
+//             arr[i]=random.nextInt(100);
+//         }
+
+//         // find total...
+//         for(int x:arr){
+//             tot+=x;
+//         }
+
+//         // find max value...
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]>max){
+//                 max=arr[i];
+//             }
+//         }
+
+//         // find min value...
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]<min){
+//                 min=arr[i];
+//             }
+//         }
+
+//         // System.out.println(Arrays.toString(arr));
+//         // read elements...
+//         System.out.print("[");
+//         for(int x:arr){
+//             System.out.print(x+", ");
+//         }
+//         System.out.println("\b\b]");
+//         System.out.println("total value is "+tot);
+//         System.out.println("max value is "+max);
+//         System.out.println("min value is "+min);
+//     }
+// }
+
+
+
+
+
+// public class Example{
+//     public static void printArray(int[] arr){
+//         System.out.print("[");
+//         for(int i=0;i<arr.length;i++){
+//             System.out.print(arr[i]+", ");
+//         }
+//         System.out.print("]");
+//     }
+
+//     public static int findMin(int[] arr){
+//         int min=Integer.MAX_VALUE;
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]<min){
+//                 min=arr[i];
+//             }
+//         }
+//         return min;
+//     }
+
+//     public static int findMax(int[] arr){
+//         int max=Integer.MIN_VALUE;
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]>max){
+//                 max=arr[i];
+//             }
+//         }
+//         return max;
+//     }
+
+//     public static int findTotal(int[] arr){
+//         int tot=0;
+//         for(int x:arr){
+//             tot+=x;
+//         }
+//         return tot;
+//     }
+
+//     public static void getInputs(int[] arr){
+//         Random random=new Random();
+//         for(int i=0;i<arr.length;i++){
+//             arr[i]=random.nextInt();
+//         }
+//     }
+
+//     public static int[] createArray(int size){
+//         int[] arr=new int[size];
+//         return arr;
+//     }
+
+//     public static void main(String args[]){
+//         Scanner input=new Scanner(System.in);
+//         System.out.print("input size of array:");
+//         int size=input.nextInt();
+
+//         int[] arr=createArray(size);
+//         getInputs(arr);
+//         int tot=findTotal(arr);
+//         int max=findMax(arr);
+//         int min=findMin(arr);
+//         printArray(arr);
+
+//         System.out.println("Total value is "+tot);
+//         System.out.println("Maximum value is "+max);
+//         System.out.println("Minimum value is "+min);
+//     }
+// }
+
+
+
+// ---> Array Legal Declalration...
+
+// public class Example{
+//     public static void main(String args[]){
+//         int[] arr;          // create an array address [array declaration]
+//         arr=new int[10];    // create an array object [array construction]
+//         arr[0]=100;         // [array initialization]
+//     }
+// }
+
+
+
 public class Example{
     public static void main(String args[]){
-        Scanner input=new Scanner(System.in);
-        int a,b,c,d,e,f,g,h,i,j;
-
-        System.out.print("insert number one:");
-        a=input.nextInt();
-
-        System.out.print("insert number two:");
-        b=input.nextInt();
-
-        System.out.print("insert number three:");
-        c=input.nextInt();
-
-        System.out.print("insert number four:");
-        d=input.nextInt();
-
-        System.out.print("insert number five:");
-        e=input.nextInt();
-
-        System.out.print("insert number six:");
-        f=input.nextInt();
-
-        System.out.print("insert number seven:");
-        g=input.nextInt();
-
-        System.out.print("insert number eight:");
-        h=input.nextInt();
-
-        System.out.print("insert number nine:");
-        i=input.nextInt();
-
-        System.out.print("insert number ten:");
-        j=input.nextInt();
-
-        int tot=0;
-        tot+=a;
-        tot+=b;
-        tot+=c;
-        tot+=d;
-        tot+=e;
-        tot+=f;
-        tot+=g;
-        tot+=h;
-        tot+=i;
-        tot+=j;
-
-        System.out.println("Total is "+tot);
+        int[] a;     // ok
+        int []b;     // ok 
+        int c[];     // ok
+        // int d[10];   // Not Okay
     }
 }
+
+
+
