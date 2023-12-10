@@ -1771,15 +1771,34 @@ import java.util.*;
 
 // ---> Default value...
 
-public class Example{
-    public static void main(String args[]){
-        // int x;
-        // System.out.println(x); // Error...
+// public class Example{
+//     public static void main(String args[]){
+//         // int x;
+//         // System.out.println(x); // Error...
 
-        boolean[] arr=new boolean[10];
+//         boolean[] arr=new boolean[10];
 
-        for(boolean x:arr){
-            System.out.println(x);
-        }
-    }
-}
+//         for(boolean x:arr){
+//             System.out.println(x);
+//         }
+//     }
+// }
+
+
+
+
+// ---> Index Error...
+
+// public class Example{
+//     public static void main(String args[]){
+//         int[] arr=new int[3];
+//         System.out.println(arr[0]);
+//         System.out.println(arr[1]);
+//         System.out.println(arr[2]);
+//         System.out.println(arr[3]); // ArrayIndexOutOfBoundsException
+//     }
+// }
+
+
+
+
