@@ -679,38 +679,100 @@ import javax.swing.JFrame;
 
 
 
-class A{
-    int a=10;
+// class A{
+//     int a=10;
 
-    {
-        a=100;
-        b=200;
-    }
+//     {
+//         a=100;
+//         b=200;
+//     }
 
-    int b=20;
-}
+//     int b=20;
+// }
 
-/*
- * class A{
+// /*
+//  * class A{
+//     int a;
+//     int b;
+
+//     {
+//         // insert into Constructor...by compiler
+//     }
+
+//     A(){
+//         a=10;
+//         a=100;
+//         b=200;
+//         b=20;
+//     }
+// }
+//  */
+
+// public class Example{
+//     public static void main(String args[]){
+//         A a1=new A();
+//         System.out.println("a : "+a1.a+" b : "+a1.b);
+//     }
+// }
+
+
+
+
+// class Value{
+//     int a;
+
+//     Value(int a){
+//         this.a=a;
+//     }
+// }
+
+
+// class Increment{
+//     public static void incrementValue(int a){
+//         a++;
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Value v1=new Value(4);
+//         System.out.println(v1.a);        // 4
+//         Increment.incrementValue(v1.a);
+//         System.out.println(v1.a);        // 4
+//     }
+// }
+
+
+
+
+
+class Value{
     int a;
-    int b;
 
-    {
-        // insert into Constructor...by compiler
-    }
-
-    A(){
-        a=10;
-        a=100;
-        b=200;
-        b=20;
+    Value(int a){
+        this.a=a;
     }
 }
- */
+
+
+class Increment{
+    public static void incrementValue(int a){
+        a++;
+    }
+
+    public static void incrementVlaue(Value v){
+        v.a++;
+    }
+}
 
 public class Example{
     public static void main(String args[]){
-        A a1=new A();
-        System.out.println("a : "+a1.a+" b : "+a1.b);
+        Value v1=new Value(4);
+        System.out.println(v1.a);        // 4
+        // Increment.incrementValue(v1.a);
+        // System.out.println(v1.a);        // 4
+
+        Increment.incrementVlaue(v1);
+        System.out.println(v1.a);
     }
 }
