@@ -834,17 +834,71 @@ import javax.swing.JFrame;
 
 
 
-public class Example{
-    int x;        
-    static int y; 
+// public class Example{
+//     int x;        
+//     static int y; 
 
-    public static void main(String args[]){
-        // System.out.println(x); // Error.. --> frstly static is Loaded... & then instance is Load...
-        System.out.println(y); // Ok...
+//     public static void main(String args[]){
+//         // System.out.println(x); // Error.. --> frstly static is Loaded... & then instance is Load...
+//         System.out.println(y); // Ok...
+//     }
+
+//     void myMethod(){
+//         System.out.println(x); // Ok...
+//         System.out.println(y); // Ok...
+//     }
+// }
+
+
+
+
+
+// public class Example{
+//     public static void main(String args[]){
+//         staticMethod();
+//         Example.staticMethod();
+
+//         // instanceMethod();         // Error...
+//         // Example.instanceMethod(); // Error...
+
+//         Example e1=new Example();
+//         e1.staticMethod();      // Ok...
+//         e1.instanceMethod();;   // Ok...
+//     }
+
+//     void instanceMethod(){
+//         System.out.println("instanceMethod");
+//     }
+
+//     static void staticMethod(){
+//         System.out.println("staticMethod");
+//     }
+// }
+
+
+
+
+class A{
+    A(){
+        System.out.println("Constructor...");
     }
 
-    void myMethod(){
-        System.out.println(x); // Ok...
-        System.out.println(y); // Ok...
+    static{
+        System.out.println("Static block...");
+    }
+
+    {
+        System.out.println("Instance block...");
+    }
+}
+
+class Example{
+    public static void main(String args[]){
+        A a1;
+        a1=new A();
+        System.out.println("=============");
+
+        A a2;
+        a1=new A();
     }
 }
