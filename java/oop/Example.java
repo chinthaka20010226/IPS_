@@ -746,33 +746,105 @@ import javax.swing.JFrame;
 
 
 
-class Value{
-    int a;
+// class Value{
+//     int a;
 
-    Value(int a){
-        this.a=a;
-    }
-}
+//     Value(int a){
+//         this.a=a;
+//     }
+// }
 
 
-class Increment{
-    public static void incrementValue(int a){
-        a++;
-    }
+// class Increment{
+//     public static void incrementValue(int a){
+//         a++;
+//     }
 
-    public static void incrementVlaue(Value v){
-        v.a++;
-    }
-}
+//     public static void incrementVlaue(Value v){
+//         v.a++;
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Value v1=new Value(4);
+//         System.out.println(v1.a);        // 4
+//         // Increment.incrementValue(v1.a);
+//         // System.out.println(v1.a);        // 4
+
+//         Increment.incrementVlaue(v1);
+//         System.out.println(v1.a);
+//     }
+// }
+
+
+
+
+// =============================================================================================
+// ---> static initialization, static variables, static methods
+
+// class MyClass{
+//     int x;        // Attribute, Instance variable
+//     static int y; // Static variable, Class variable, Template variable
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         MyClass c1=new MyClass();
+//         c1.x=10;
+//         c1.y=20;
+
+//         MyClass c2=new MyClass();
+//         c2.x=100;
+//         c2.y=200;
+
+//         MyClass c3=new MyClass();
+//         c3.x=1000;
+//         c3.y=2000;
+
+//         System.out.println("c1 : x = "+c1.x+", y = "+c1.y);
+//         System.out.println("c1 : x = "+c2.x+", y = "+c2.y);
+//         System.out.println("c1 : x = "+c3.x+", y = "+c3.y);
+//     }
+// }
+
+
+
+
+
+
+// class MyClass{
+//     int x;        // Attribute, Instance variable
+//     static int y; // Static variable, Class variable, Template variable
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         // System.out.println(MyClass.x); // Error...
+//         System.out.println(MyClass.y);
+
+//         MyClass c1=new MyClass();
+//         System.out.println(c1.x);
+//         System.out.println(c1.y); // Ok...
+//     }
+// }
+
+
+
+
+
 
 public class Example{
-    public static void main(String args[]){
-        Value v1=new Value(4);
-        System.out.println(v1.a);        // 4
-        // Increment.incrementValue(v1.a);
-        // System.out.println(v1.a);        // 4
+    int x;        
+    static int y; 
 
-        Increment.incrementVlaue(v1);
-        System.out.println(v1.a);
+    public static void main(String args[]){
+        // System.out.println(x); // Error.. --> frstly static is Loaded... & then instance is Load...
+        System.out.println(y); // Ok...
+    }
+
+    void myMethod(){
+        System.out.println(x); // Ok...
+        System.out.println(y); // Ok...
     }
 }
