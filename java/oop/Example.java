@@ -912,11 +912,130 @@ import javax.swing.JFrame;
 // ===================================================================================================
 // Encapsulation...
 
+// class Example{
+//     public static void main(String args[]){
+//         JFrame f1=new JFrame();
+//         f1.setSize(300,300);
+//         f1.setTitle("Form 1");
+//         f1.setVisible(true);
+//     }
+// }
+
+
+
+
+// class Customer{
+//     private String name;
+//     private String address;
+//     private double salary;
+
+//     void setName(String name){
+//         this.name=name;
+//     }
+
+//     void setAddress(String address){
+//         this.address=address;
+//     }
+
+//     void setSalary(double salary){
+//         if(salary<0){
+//             System.out.println("Invalid Salary...");
+//             return;
+//         }
+//         this.salary=salary;
+//     }
+
+//     String getName(){
+//         return name;
+//     }
+
+//     String getAddress(){
+//         return address;
+//     }
+
+//     double getSalary(){
+//         return salary;
+//     }
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Customer c1=new Customer();
+//         c1.setName("chinthaka");
+//         c1.setAddress("Elahera");
+//         c1.setSalary(25000);
+
+//         System.out.println("name : "+c1.getName()+", address : "+c1.getAddress()+", salary : "+c1.getSalary());
+//     }
+// }
+
+
+
+
+
+
+// class Customer{
+//     int code;
+//     String name;
+
+//     Customer(int code,String name){
+//         this.code=code;
+//         this.name=name;
+//     }
+
+//     Customer(){}
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Customer c1;
+//         c1=new Customer();
+//         c1=new Customer(111,"chinthaka");
+//     }
+// }
+
+
+
+
+
+// ---> Stack...
+
+// class Stack{
+//     private int[] dataArray;
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Stack s1=new Stack();
+//     }
+// }
+
+
+
+
+class Stack{
+    private int[] dataArray;
+    private int nextIndex;
+
+    Stack(int size){
+        dataArray=new int[size];
+    }
+
+    void push(int data){
+        if(nextIndex<dataArray.length){
+            System.out.println("Stack Overflow...");
+        }
+        dataArray[nextIndex++]=data;
+    }
+}
+
 class Example{
     public static void main(String args[]){
-        JFrame f1=new JFrame();
-        f1.setSize(300,300);
-        f1.setTitle("Form 1");
-        f1.setVisible(true);
+        Stack s1=new Stack(10);
+        s1.push(10);
+        s1.push(20);
+        s1.push(30);
+        s1.push(40);
+        s1.push(50);
     }
 }
