@@ -878,27 +878,45 @@ import javax.swing.JFrame;
 
 
 
-class A{
-    A(){
-        System.out.println("Constructor...");
-    }
+// class A{
+//     int a;
 
-    static{
-        System.out.println("Static block...");
-    }
+//     A(){    // 3, 5
+//         System.out.println("Constructor...");
+//     }
 
-    {
-        System.out.println("Instance block...");
-    }
-}
+//     static{  // 1
+//         System.out.println("Static block...");
+//     }
+
+//     {        // 2, 4
+//         System.out.println("Instance block...");
+//     }
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         A a1;
+//         a1=new A();
+//         System.out.println("=============");
+
+//         A a2;
+//         a1=new A();
+//     }
+// }
+
+
+
+
+
+// ===================================================================================================
+// Encapsulation...
 
 class Example{
     public static void main(String args[]){
-        A a1;
-        a1=new A();
-        System.out.println("=============");
-
-        A a2;
-        a1=new A();
+        JFrame f1=new JFrame();
+        f1.setSize(300,300);
+        f1.setTitle("Form 1");
+        f1.setVisible(true);
     }
 }
