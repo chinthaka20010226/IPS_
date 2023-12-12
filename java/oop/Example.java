@@ -2431,6 +2431,9 @@ import javax.swing.*;
 
 
 
+
+
+
 // -> Multiple inheritace....
 
 // interface A{}
@@ -2449,6 +2452,8 @@ import javax.swing.*;
 
 
 
+
+
 // -> Constructor.....
 
 // interface A{
@@ -2461,13 +2466,60 @@ import javax.swing.*;
 
 
 
+
+
+
 // -> Abstract Level
+
+
+
+
 
 
 // -> static key word...
 
-interface Demo{
+// interface Demo{
+//     public static void main(String[] args) {
+//         System.out.println("Done...");
+//     }
+// }
+
+
+
+
+
+// ->
+
+// interface A{}
+
+// interface B{}
+
+// interface C extends A,B{}
+
+
+
+
+
+// ->
+
+interface A{
+    // int a; // Error....
+
+    int x=100; // static, final, public
+
+    public void park();
+}
+
+class Demo{
     public static void main(String[] args) {
-        System.out.println("Done...");
+        System.out.println(A.x);
+        A.x=200; // Error....
     }
 }
+
+
+
+// =============================================================================================================
+
+// Event Handeling
+
