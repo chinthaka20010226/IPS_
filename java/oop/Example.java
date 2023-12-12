@@ -2723,33 +2723,39 @@ interface Vehicle{
     public void park();
 }
 
-class Car implements Vehicle{
-    public void park(){
-        System.out.println("Car parking...");
-    }
+interface Car extends Vehicle{
+    
 }
 
-class Van implements Vehicle{
-    public void park(){
-        System.out.println("Van parking...");
-    }
+abstract class Van implements Vehicle{
+    
 }
 
-class Bus implements Vehicle{
-    public void park(){
-        System.out.println("Bus parking...");
-    }
+abstract class Bus implements Vehicle{
+    
 }
 
 class Demo{
     public static void main(String[] args) {
-        Vehicle v1=new Car();
+        Vehicle v1=new Car(){
+            public void park(){
+                System.out.println("Car parking...");
+            }
+        };
         v1.park();
 
-        Vehicle v2=new Van();
+        Vehicle v2=new Van(){
+            public void park(){
+                System.out.println("Van parking...");
+            }
+        };
         v1.park();
 
-        Vehicle v3=new Bus();
+        Vehicle v3=new Bus(){
+            public void park(){
+                System.out.println("Bus parking...");
+            }
+        };
         v1.park();
     }
 }
