@@ -2392,11 +2392,82 @@ import javax.swing.*;
 
 
 
+ // -> protected Can't use in Interfaces
 
-interface Vehicle{
-    public void start();
+// interface Vehicle{
+//     public void start();
 
-    abstract public void end();
+//     abstract public void end();
 
-    // protected void park();  // Error... ---> Can't use protected in interface
+//     // protected void park();  // Error... ---> Can't use protected in interface
+// }
+
+
+
+
+
+// -> Can't include body for abstract method in Interfaces
+
+// interface Vehicle{
+//     // void start(){} // Error...
+// }
+
+
+
+
+// -> Can't create instance from interface
+
+// interface Vehicle{
+
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1;
+//         // v1=new Vehicle(); // Error...
+//     }
+// }
+
+
+
+
+// -> Multiple inheritace....
+
+// interface A{}
+
+// interface B{}
+
+// class C implements A,B{}
+
+// ================================
+
+// abstract class A{}
+
+// abstract class B{}
+
+// class C implements A,B{}
+
+
+
+// -> Constructor.....
+
+// interface A{
+//     A(){} // Error...
+// }
+
+// abstract class A{
+//     A(){}
+// }
+
+
+
+// -> Abstract Level
+
+
+// -> static key word...
+
+interface Demo{
+    public static void main(String[] args) {
+        System.out.println("Done...");
+    }
 }
