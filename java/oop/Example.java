@@ -1744,3 +1744,50 @@ import javax.swing.*;
 
 // ---> Polymorphism
 
+// class Super{
+//     int value=100;
+
+//     void print(){
+//         System.out.println("print of Super...");
+//     }
+// }
+
+// class Sub extends Super{
+//     int value=200;
+
+//     void print(){
+//         System.out.println("print of Sub...");
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Super s1=new Sub();
+//         s1.print();
+//         System.out.println("Value : "+s1.value);
+//     }
+// }
+
+
+
+
+
+// ---> Class "Object"  /*Common behaviors for all Class */
+
+class SuperCustomer{ /*Compiler insert (extends Object) */
+    //
+}
+
+class SubCustomer extends SuperCustomer{
+    //
+}
+
+public class Example {
+    public static void main(String args[]){
+        SuperCustomer c1=new SuperCustomer();
+        c1.toString();
+        c1.getClass();
+        c1.equals(null);
+        c1.hashCode();
+    }
+}
