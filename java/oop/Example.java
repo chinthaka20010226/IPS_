@@ -1529,27 +1529,103 @@ import javax.swing.*;
 
 
 
-class Animal{
-    void sound(){
-        System.out.println("Sound...");
+// class Animal{
+//     void sound(){
+//         System.out.println("Sound...");
+//     }
+// }
+
+// class Dog extends Animal{
+
+
+//     // Must same name
+//     // Must same parameter
+//     @Override
+//     void sound(){
+//         System.out.println("Dog Sound...");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Dog d1=new Dog();
+//         d1.sound();
+
+        
+//     }
+// }
+
+
+
+
+
+
+// class A{
+//     int a;
+
+//     void printA(){
+//         System.out.println("printA()");
+//     }
+// }
+
+// class B extends A{
+//     int b;
+
+//     void printA(){
+//         System.out.println("printA() in class B");
+//     }
+
+//     void printB(){
+//         System.out.println("printB()");
+//     }
+
+//     void callAll(){
+//         super.printA();
+//         printB();
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         B b1=new B();
+//         b1.printA();
+//         b1.printB();
+//         b1.callAll();
+
+//         // b1.super.printA(); // Error...
+//     }
+// }
+
+
+
+
+
+
+
+
+class A{
+    int a;
+
+    void print(){
+        System.out.println("print()");
     }
 }
 
-class Dog extends Animal{
+class B{
+    int b;
 
-
-    // Must same name
-    // Must same parameter
-    void sound(){
-        System.out.println("Dog Sound...");
+    void print(){
+        System.out.println("print()");
     }
+}
+
+class C extends A,B{
+    // Error.....
 }
 
 class Demo{
     public static void main(String[] args) {
-        Dog d1=new Dog();
-        d1.sound();
-
-        
+        C c1=new C();
+        // c.print();  // what prnt() we can use ?????
     }
 }
