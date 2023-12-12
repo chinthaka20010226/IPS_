@@ -2170,3 +2170,43 @@ import javax.swing.*;
 
 // ---> Abstraction...
 
+// --> Abstraction Methods & Abstraction Classes
+
+abstract class Vehicle{
+    abstract public void park();
+}
+
+class Car extends Vehicle{
+    @Override
+    public void park(){
+        System.out.println("Car Parking...");
+    }
+}
+
+class Bus extends Vehicle{
+    @Override
+    public void park(){
+        System.out.println("Bus Parking...");
+    }
+}
+
+class Van extends Vehicle{
+    @Override
+    public void park(){
+        System.out.println("Van Parking...");
+    }
+}
+
+class Demo{
+    public static void main(String[] args) {
+        Vehicle v1;
+        v1=new Car();
+        v1.park();
+
+        v1=new Bus();
+        v1.park();
+
+        v1=new Van();
+        v1.park();
+    }
+}
