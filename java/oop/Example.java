@@ -2391,3 +2391,12 @@ import javax.swing.*;
 
 
 
+
+
+interface Vehicle{
+    public void start();
+
+    abstract public void end();
+
+    // protected void park();  // Error... ---> Can't use protected in interface
+}
