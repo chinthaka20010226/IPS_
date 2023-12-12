@@ -2502,20 +2502,99 @@ import javax.swing.*;
 
 // ->
 
+// interface A{
+//     // int a; // Error....
+
+//     int x=100; // static, final, public
+
+//     public void park();
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         System.out.println(A.x);
+//         A.x=200; // Error....
+//     }
+// }
+
+
+
+
+
+
+// ->
+
+// class A{}
+
+// class B{}
+
+// class C extends A,B{} // Error...
+
+// =============================================================
+
+// interface A{}
+
+// interface B{}
+
+// class C implements A,B{}
+
+
+
+
+// -> 
+
+// interface Dog{}
+
+// interface Fox{}
+
+// class Lion{}
+
+// class Man extends Lion implements Dog,Fox{}
+
+/* 
+ * Man is s Dog
+ * Man is a Fox
+ * Man is a Lion
+*/
+
+
+
+// ->
+
+
+// interface A{}
+
+// interface B{}
+
+// interface C extends  A,B{}
+
+
+
+
+// -> 
+
+
+// class Lion{}
+
+// interface Animal extenda Lion{}  // Error.....
+
+// interface Animal implements Lion{} // Error... 
+
+
+
+
+// -> 
+
 interface A{
-    // int a; // Error....
+    public void start();
 
-    int x=100; // static, final, public
-
-    public void park();
-}
-
-class Demo{
-    public static void main(String[] args) {
-        System.out.println(A.x);
-        A.x=200; // Error....
+    // implement method
+    default public void end(){
+        /// =================
     }
 }
+
+
 
 
 
