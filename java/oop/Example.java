@@ -1656,20 +1656,81 @@ import javax.swing.*;
 
 // ---> Heirarchical inheritance
 
+// class A{
+//     //
+// }
+
+// class B extends A{
+//     //
+// }
+
+// class C extends A{
+//     //
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+        
+//     }
+// }
+
+
+
+
+// ---> multi level innheritance
+
+// class A{
+//     //
+// }
+
+// class B extends A{
+//     //
+// }
+
+// class C extends B{
+//     //
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+        
+//     }
+// }
+
+
+
+
+// ---> Dynamic method dipatch...
+
 class A{
-    //
+    int a;
+
+    void print(){
+        System.out.println("print()");
+    }
 }
 
 class B extends A{
-    //
-}
+    int b;
 
-class C extends A{
-    //
+    void print(){
+        System.out.println("print() of B");
+    }
 }
 
 class Demo{
     public static void main(String[] args) {
-        
+        A a1=new A();
+        a1.print();
+        System.out.println("=======================");
+
+        // Method Overrnding
+        B b1=new B();
+        b1.print();
+        System.out.println("=======================");
+
+        // Dynamic dispatch
+        A ab=new B();
+        ab.print();   // Dynamic Method Dispatch...
     }
 }
