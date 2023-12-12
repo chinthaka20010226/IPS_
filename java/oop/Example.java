@@ -1889,38 +1889,100 @@ import javax.swing.*;
 
 // ---> equals()
 
-class Customer{
-    int code;
-    String name;
+// class Customer{
+//     int code;
+//     String name;
 
-    Customer(int code, String name){
-        this.code=code;
-        this.name=name;
+//     Customer(int code, String name){
+//         this.code=code;
+//         this.name=name;
+//     }
+
+//     public boolean equals(Object obj){
+//         if(this==obj){
+//             return true;
+//         }
+//         return false;
+//     } 
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Customer c1=new Customer(1001,"Kamal");
+//         Customer c2=new Customer(1002,"Namal");
+//         Customer c3=new Customer(1002,"Amal");
+//         Customer c4=c1;
+
+//         /*
+//         System.out.println("c1==c2"+" "+(c1==c2));
+//         System.out.println("c1==c3"+" "+(c1==c3));
+//         System.out.println("c1==c4"+" "+(c1==c4));
+//         */
+
+//         System.out.println("c1==c2"+" "+(c1.equals(c2)));
+//         System.out.println("c1==c3"+" "+(c1.equals(c3)));
+//         System.out.println("c1==c4"+" "+(c1.equals(c4)));
+//     }
+// }
+
+
+
+
+
+// =================================================================================================
+
+// ---> Overriding Rules,
+
+
+// -> instance method in super class ---> can't overring static method in sub class
+
+// class Vehicle{
+//     void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     // Error...
+//     static void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+// -> static method in super class ---> can't overriding instance method in sub class
+
+// class Vehicle{
+//     static void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     // Error...
+//     void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+// -> Can't Overriding the static method...
+
+class Vehicle{
+    static void park(){
+        System.out.println("Vehicle parking...");
     }
+}
 
-    public boolean equals(Object obj){
-        if(this==obj){
-            return true;
-        }
-        return false;
-    } 
+class Car extends Vehicle{
+    static void park(){
+        System.out.println("Car Parking...");
+    }
 }
 
 class Demo{
     public static void main(String[] args) {
-        Customer c1=new Customer(1001,"Kamal");
-        Customer c2=new Customer(1002,"Namal");
-        Customer c3=new Customer(1002,"Amal");
-        Customer c4=c1;
-
-        /*
-        System.out.println("c1==c2"+" "+(c1==c2));
-        System.out.println("c1==c3"+" "+(c1==c3));
-        System.out.println("c1==c4"+" "+(c1==c4));
-        */
-
-        System.out.println("c1==c2"+" "+(c1.equals(c2)));
-        System.out.println("c1==c3"+" "+(c1.equals(c3)));
-        System.out.println("c1==c4"+" "+(c1.equals(c4)));
+        Vehicle v1=new Car();
+        v1.park();
     }
 }
