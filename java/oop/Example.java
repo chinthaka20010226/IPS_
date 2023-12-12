@@ -1483,38 +1483,77 @@ import javax.swing.*;
 
 
 
-class A{
-    int a;
+// class A{
+//     int a;
 
-    void printA(){
-        System.out.println("a : "+a);
+//     void printA(){
+//         System.out.println("a : "+a);
+//     }
+// }
+
+// class B extends A{
+//     int b;
+
+//     void printB(){
+//         System.out.println("b : "+b);
+//     }
+
+//     void callAll(){
+//         printA();
+//         printB();
+//     }
+
+//     void printAllValue(){
+//         System.out.println("a : "+a);
+//         System.out.println("b : "+b);
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         A a1=new B();  // Ok...
+//         // B b1=new A();  // Error...
+
+//         a1.a=100;
+//         // a1.b=200; // Error...
+
+//         a1.printA();
+//         // a1.printB(); // Error...
+//     }
+// }
+
+
+
+
+
+
+
+
+class Animal{
+    void sound(){
+        System.out.println("Sound...");
     }
 }
 
-class B extends A{
-    int b;
+class Dog extends Animal{
 
-    void printB(){
-        System.out.println("b : "+b);
-    }
 
-    void callAll(){
-        printA();
-        printB();
-    }
-
-    void printAllValue(){
-        System.out.println("a : "+a);
-        System.out.println("b : "+b);
+    // Must same name
+    // Must same parameter
+    void sound(){
+        System.out.println("Dog Sound...");
     }
 }
 
 class Demo{
     public static void main(String[] args) {
-        A a1=new B();  // Ok...
-        // B b1=new A();  // Error...
+        Dog d1=new Dog();
+        d1.sound();
 
-        a1.a=100;
-        a1.b=200;
+        Animal a1=new Animal();
+        a1.sound();
+
+        Animal a2=new Dog();
+        a2.sound();
     }
 }
