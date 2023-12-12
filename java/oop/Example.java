@@ -1,5 +1,5 @@
 import java.util.*;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 // public class Example{
 //     public static void main(String args[]){
@@ -998,6 +998,7 @@ import javax.swing.JFrame;
 
 
 
+
 // ---> Stack...
 
 // class Stack{
@@ -1013,29 +1014,179 @@ import javax.swing.JFrame;
 
 
 
-class Stack{
-    private int[] dataArray;
-    private int nextIndex;
 
-    Stack(int size){
-        dataArray=new int[size];
-    }
 
-    void push(int data){
-        if(nextIndex<dataArray.length){
-            System.out.println("Stack Overflow...");
-        }
-        dataArray[nextIndex++]=data;
+
+// class Stack{
+//     private int[] dataArray;
+//     private int nextIndex;
+
+//     Stack(int size){
+//         dataArray=new int[size];
+//     }
+
+//     void push(int data){
+//         if(isFull()){
+//             System.out.println("Stack Overflow...");
+//             return;
+//         }
+//         dataArray[nextIndex++]=data;
+//     }
+
+//     void printStack(){
+//         System.out.print("[");
+//         for(int i=nextIndex-1;i>=0;i--){
+//             System.out.print(dataArray[i]+", ");
+//         }
+//         System.out.println(isEmpty() ? "empty]" : "\b\b]");
+//     }
+
+//     void pop(){
+//         if(isEmpty()){
+//             System.out.println("Stack Underflow");
+//             return;
+//         }
+//         nextIndex--;
+//     }
+
+//     boolean isFull(){
+//         return nextIndex>=dataArray.length;
+//     }
+
+//     boolean isEmpty(){
+//         return nextIndex<=0;
+//     }
+
+//     int size(){
+//         return nextIndex;
+//     }
+
+//     void clear(){
+//         nextIndex=0;
+//     }
+// }
+
+// class Example{
+//     public static void main(String args[]){
+//         Stack s1=new Stack(10);
+//         s1.push(10);
+//         s1.push(20);
+//         s1.push(30);
+//         s1.push(40);
+//         s1.push(50);
+        
+//         s1.printStack();
+
+//         s1.pop();
+//         s1.printStack();
+//         s1.pop();
+//         s1.printStack();
+//     }
+// }
+
+
+
+
+
+
+
+// ==============================================================================================================
+// ---> Inheritance
+
+// class Calculator extends JFrame{
+//     Calculator(){
+//         setSize(400,400);
+//         setTitle("Form 1");
+//     }
+
+//     // Compiler insert
+//     @Override
+//     public void setSize(int width,int height){
+//         super.setSize(width, height);
+//     }
+
+//     @Override
+//     public void setTitle(String title){
+//         super.setTitle(title);
+//     }
+//     // Compiler insert
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Calculator c1=new Calculator();
+//         c1.setVisible(true);
+//     }
+// }
+
+// JFrame     --> super class, base class, parent class
+// Calculator --> sub class, derived class, child class
+
+
+
+
+
+
+// class Calculator extends JFrame{
+//     JButton closeButton;
+//     JButton yesButton;
+//     JButton noButton;
+
+//     Calculator(){
+//         setSize(400,400);
+//         setTitle("Calculator");
+//         setDefaultCloseOperation(EXIT_ON_CLOSE);
+//         setLocationRelativeTo(null);
+
+//         closeButton=new JButton("Close");
+//         yesButton=new JButton("Yes");
+//         noButton=new JButton("No");
+        
+//         add("South",closeButton);
+//         add("West",yesButton);
+//         add("North",noButton);
+        
+//     }
+// }
+
+// public class Example{
+//     public static void main(String args[]){
+//         Calculator c1=new Calculator();
+//         c1.setVisible(true);
+//     }
+// }
+
+
+
+
+class A{
+    int a;
+
+    void printA(){
+        System.out.println("a : "+a);
     }
 }
 
-class Example{
-    public static void main(String args[]){
-        Stack s1=new Stack(10);
-        s1.push(10);
-        s1.push(20);
-        s1.push(30);
-        s1.push(40);
-        s1.push(50);
+class B extends A{
+    int b;
+
+    void printB(){
+        System.out.println("b : "+b);
+    }
+
+    void printAllMethod(){
+        printA();
+        printB();
+    }
+
+    void printAllAttributes(){
+        System.out.println("a : "+a);
+        System.out.println("b : "+b);
+    }
+}
+class Demo{
+    public static void main(String[] args) {
+        new B(); // anonymous object...
+                 // wait a little bit and render if it is not use
     }
 }
