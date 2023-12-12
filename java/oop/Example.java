@@ -2838,20 +2838,56 @@ import javax.swing.*;
 
 // ->
 
-interface Vehicle{
-    public void park();
+// interface Vehicle{
+//     public void park();
 
-    default public void start(){
-        System.out.println("Default Method...");
+//     default public void start(){
+//         System.out.println("Default Method...");
+//     }
+
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1;
+//         v1=()->System.out.println("Car Parking!...");
+//         v1.park();
+//         v1.start();
+//     }
+// }
+
+
+
+
+
+
+// =========================================================================================================
+
+// -> Object Reference Casting...
+
+class A{
+    int a;
+
+    public void mA(){
+        System.out.println("mA()");
     }
+}
 
+class B extends A{
+    int b;
+
+    public void mB(){
+        System.out.println("mB()");
+    }
 }
 
 class Demo{
     public static void main(String[] args) {
-        Vehicle v1;
-        v1=()->System.out.println("Car Parking!...");
-        v1.park();
-        v1.start();
+        A a1=new B();
+        a1.a=100;
+        // a1.b=200; // Error...
+
+        a1.mA();
+
     }
 }
