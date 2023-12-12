@@ -1637,11 +1637,34 @@ import javax.swing.*;
 
 // ---> single inheritance...
 
+// class A{
+//     //
+// }
+
+// class B extends A{
+//     //
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+        
+//     }
+// }
+
+
+
+
+// ---> Heirarchical inheritance
+
 class A{
     //
 }
 
 class B extends A{
+    //
+}
+
+class C extends A{
     //
 }
 
