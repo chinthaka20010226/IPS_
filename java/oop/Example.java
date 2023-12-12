@@ -2136,29 +2136,37 @@ import javax.swing.*;
 
 // -> Must same return type
 
-class Vehicle{
-    public boolean getData(){
-        return true;
-    }
+// class Vehicle{
+//     public boolean getData(){
+//         return true;
+//     }
 
-    public Vehicle set(){
-        return null;
-    }
-}
+//     public Vehicle set(){
+//         return null;
+//     }
+// }
 
-class Van{
-    //
-}
+// class Van{
+//     //
+// }
 
-class Car extends Vehicle{
+// class Car extends Vehicle{
     
-    public boolean getData(){
-        return true;
-    }
+//     public boolean getData(){
+//         return true;
+//     }
 
 
-    // Core variant return type... --> only for extends class
-    public set(){
-        return null;
-    }
-}
+//     // Core variant return type... --> only for extends class
+//     public Car set(){
+//         return null;
+//     }
+// }
+
+
+
+
+// ========================================================================================================
+
+// ---> Abstraction...
+
