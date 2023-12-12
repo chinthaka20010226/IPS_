@@ -1702,35 +1702,45 @@ import javax.swing.*;
 
 // ---> Dynamic method dipatch...
 
-class A{
-    int a;
+// class A{
+//     int a;
 
-    void print(){
-        System.out.println("print()");
-    }
-}
+//     void print(){
+//         System.out.println("print()");
+//     }
+// }
 
-class B extends A{
-    int b;
+// class B extends A{
+//     int b;
 
-    void print(){
-        System.out.println("print() of B");
-    }
-}
+//     void print(){
+//         System.out.println("print() of B");
+//     }
+// }
 
-class Demo{
-    public static void main(String[] args) {
-        A a1=new A();
-        a1.print();
-        System.out.println("=======================");
+// class Demo{
+//     public static void main(String[] args) {
+//         A a1=new A();
+//         a1.print();
+//         System.out.println("=======================");
 
-        // Method Overrnding
-        B b1=new B();
-        b1.print();
-        System.out.println("=======================");
+//         // Method Overrnding
+//         B b1=new B();
+//         b1.print();
+//         System.out.println("=======================");
 
-        // Dynamic dispatch
-        A ab=new B();
-        ab.print();   // Dynamic Method Dispatch...
-    }
-}
+//         // Dynamic dispatch
+//         A ab=new B();
+//         ab.print();   // Dynamic Method Dispatch...
+//     }
+// }
+
+
+
+
+
+
+// ======================================================================================
+
+// ---> Polymorphism
+
