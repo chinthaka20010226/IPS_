@@ -1463,5 +1463,15 @@ class Demo{
         A a1=null;
         a1.a=100;
         a1.b=200; // B is inherite in A, therefore B know all a,b values, but A doesn't know...
+
+        a1.printA();
+        // a1.printB(); // Error...
+
+        B b1=null;
+        b1.a=100;
+        b1.b=200;
+
+        b1.printA();
+        b1.printB();
     }
 }
