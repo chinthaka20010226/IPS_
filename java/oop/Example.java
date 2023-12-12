@@ -1367,67 +1367,101 @@ import javax.swing.*;
 
 
 
+// class A{
+//     int a=10;
+
+//     static int b=20;
+
+//     A(){
+//         System.out.println("A()");
+//     }
+
+//     A(int x){
+//         System.out.println("A(int )");
+//     }
+
+//     // A(int x,int y){
+//     //     System.out.println("A(int ,int )");
+//     // }
+// }
+// // this(a);  ---> Error...
+// // this(b);
+
+
+
+// class B extends A{
+//     int x=100;
+
+//     static int y=200;
+
+//     // B(){
+//     //     // Default... compiler
+//     //     super();
+//     //     System.out.println("B()");
+//     // }
+
+//     B(int i){
+//         // Not Default, We assigned...
+//         super(x);
+//         System.out.println("B(int )");
+//     }
+
+//     // B(int x,int y){
+//     //     super(x,y);
+//     //     System.out.println("B(int ,int )");
+//     // }
+// }
+// // super(a);  ---> Error...
+// // suer(b);
+// // suer(x);   ---> Error..
+// // suer(y);
+
+
+
+
+// class Demo{
+//     public static void main(String[] args) {
+//        
+//     }
+// }
+
+
+
+
+
+
+
+
 class A{
-    int a=10;
+    int a;
 
-    static int b=20;
-
-    A(){
-        System.out.println("A()");
+    void printA(){
+        System.out.println("a : "+a);
     }
-
-    A(int x){
-        System.out.println("A(int )");
-    }
-
-    // A(int x,int y){
-    //     System.out.println("A(int ,int )");
-    // }
 }
-// this(a);  ---> Error...
-// this(b);
-
-
 
 class B extends A{
-    int x=100;
+    int b;
 
-    static int y=200;
-
-    // B(){
-    //     // Default... compiler
-    //     super();
-    //     System.out.println("B()");
-    // }
-
-    B(int i){
-        // Not Default, We assigned...
-        super();
-        System.out.println("B(int )");
+    void printB(){
+        System.out.println("b : "+b);
     }
 
-    // B(int x,int y){
-    //     super(x,y);
-    //     System.out.println("B(int ,int )");
-    // }
+    void callAll(){
+        printA();
+        printB();
+    }
+
+    void printAllValue(){
+        System.out.println("a : "+a);
+        System.out.println("b : "+b);
+    }
 }
-// super(a);  ---> Error...
-// suer(b);
-// suer(x);   ---> Error..
-// suer(y);
-
-
-
 
 class Demo{
     public static void main(String[] args) {
-        new B();
-        System.out.println("----------------------");
-
-        new B(10);
-        System.out.println("----------------------");
-
-        new B(10,20);
-        System.out.println("----------------------");
+        A a1=null;
+        a1.a=100;
+        a1.b=200; // B is inherite in A, therefore B know all a,b values, but A doesn't know...
     }
 }
