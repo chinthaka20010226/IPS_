@@ -2362,3 +2362,32 @@ import javax.swing.*;
 
 
 // ---> Interfacess....
+
+
+// abstract class Vehicle{
+//     abstract public void start();
+
+//     abstract public void end();
+// }
+
+
+// Implicitly abstract.....
+// interface Vehicle{
+//     public void start();
+
+//     public void end();
+// }
+
+
+
+
+
+/*
+ * class       ---> class (extends)
+ * class       ---> interface (implements)
+ * interface   ---> interface (extends)
+ * interface   ---> class (extends) Error..... 
+ */
+
+
+
