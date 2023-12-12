@@ -2653,39 +2653,103 @@ import javax.swing.*;
 
 // -> Anonymous Inner Classes....
 
-class A{
-    void mA(){
-        System.out.println("mA of A");
+// class A{
+//     void mA(){
+//         System.out.println("mA of A");
+//     }
+// }
+
+// class B extends A{
+//     void mA(){
+//         System.out.println("mA of B");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         A a1=new B();
+//         a1.mA();
+
+//         A a2=new A(){
+//             int a;
+
+//             {
+//                 System.out.println("instance block");
+//             }
+
+//             void set(){
+//                 //
+//             }
+
+//             void mA(){
+//                 System.out.println("anonymous Method");
+//             }
+//         };
+
+//         a2.mA();
+//     }
+// }
+
+
+
+
+
+
+// interface A{
+//     public void set();
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         // A a1=new A(); // Error....
+
+//         A a1=new A(){ // inner class
+//             public void set(){
+//                 System.out.println("anonymous inner class");
+//             }
+//         };
+
+//         a1.set();
+//     }
+// }
+
+
+
+
+
+
+
+interface Vehicle{
+    public void park();
+}
+
+class Car implements Vehicle{
+    public void park(){
+        System.out.println("Car parking...");
     }
 }
 
-class B extends A{
-    void mA(){
-        System.out.println("mA of B");
+class Van implements Vehicle{
+    public void park(){
+        System.out.println("Van parking...");
+    }
+}
+
+class Bus implements Vehicle{
+    public void park(){
+        System.out.println("Bus parking...");
     }
 }
 
 class Demo{
     public static void main(String[] args) {
-        A a1=new B();
-        a1.mA();
+        Vehicle v1=new Car();
+        v1.park();
 
-        A a2=new A(){
-            int a;
+        Vehicle v2=new Van();
+        v1.park();
 
-            {
-                System.out.println("instance block");
-            }
-
-            void set(){
-                //
-            }
-
-            void mA(){
-                System.out.println("anonymous Method");
-            }
-        };
-
-        a2.mA();
+        Vehicle v3=new Bus();
+        v1.park();
     }
 }
