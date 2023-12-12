@@ -1968,21 +1968,166 @@ import javax.swing.*;
 
 // -> Can't Overriding the static method...
 
+// class Vehicle{
+//     static void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     static void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1=new Car();
+//         v1.park();
+//     }
+// }
+
+
+// -> private can't override...
+
+// class Vehicle{
+//     private void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     // Error...
+//     public void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+// -> final can't override...
+
+// class Vehicle{
+//     final public void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     // Error...
+//     static void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+// -> final class is a final class in heirarchy...therefore can't override
+
+// final class Vehicle{
+//     void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     // Error...
+//     static void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+
+// -> Access Modifires for Method Overriding
+
+// -> private ---> Not override, this methods separate...
+
+// class Vehicle{
+//     private void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     
+//     private void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+
+// -> Not Override, because Access privilages(High -> Low)
+
+
+// class Vehicle{
+//     void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+    
+//     private void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+
+// -> Override, Okay ---> same
+
+
+// class Vehicle{
+//     void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+    
+//     void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+
+// -> Override, Ok ---> (Low -> High)
+
+// class Vehicle{
+//     void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+    
+//     protected void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+
+// -> Override, Ok ---> (Low -> High)
+
 class Vehicle{
-    static void park(){
+    void park(){
         System.out.println("Vehicle parking...");
     }
 }
 
 class Car extends Vehicle{
-    static void park(){
+    
+    public void park(){
         System.out.println("Car Parking...");
     }
 }
 
-class Demo{
-    public static void main(String[] args) {
-        Vehicle v1=new Car();
-        v1.park();
-    }
-}
+
+/*
+ * private
+ * default
+ * protected
+ * public
+ */
