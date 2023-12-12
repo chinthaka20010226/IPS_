@@ -1603,29 +1603,50 @@ import javax.swing.*;
 
 
 
+// class A{
+//     int a;
+
+//     void print(){
+//         System.out.println("print()");
+//     }
+// }
+
+// class B{
+//     int b;
+
+//     void print(){
+//         System.out.println("print()");
+//     }
+// }
+
+// class C extends A,B{
+//     // Error.....
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         C c1=new C();
+//         // c.print();  // what prnt() we can use ?????
+//     }
+// }
+
+
+
+
+
+
+// ---> single inheritance...
+
 class A{
-    int a;
-
-    void print(){
-        System.out.println("print()");
-    }
+    //
 }
 
-class B{
-    int b;
-
-    void print(){
-        System.out.println("print()");
-    }
-}
-
-class C extends A,B{
-    // Error.....
+class B extends A{
+    //
 }
 
 class Demo{
     public static void main(String[] args) {
-        C c1=new C();
-        // c.print();  // what prnt() we can use ?????
+        
     }
 }
