@@ -2170,43 +2170,188 @@ import javax.swing.*;
 
 // ---> Abstraction...
 
-// --> Abstraction Methods & Abstraction Classes
+// --> Abstract Methods & Abstract Classes
+
+// abstract class Vehicle{
+//     abstract public void park();
+// }
+
+// class Car extends Vehicle{
+//     @Override
+//     public void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+// class Bus extends Vehicle{
+//     @Override
+//     public void park(){
+//         System.out.println("Bus Parking...");
+//     }
+// }
+
+// class Van extends Vehicle{
+//     @Override
+//     public void park(){
+//         System.out.println("Van Parking...");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1;
+//         v1=new Car();
+//         v1.park();
+
+//         v1=new Bus();
+//         v1.park();
+
+//         v1=new Van();
+//         v1.park();
+//     }
+// }
+
+
+
+// ---> Rules for abstract
+
+// -> Can't use abstract key word for method with body... & with abstract class
+
+
+// Concreate Class ---> method has body
+// class Vehicle{
+//     // Concreate Method
+//     public void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+// abstract class Vehicle{
+    
+//     abstract public void park();
+// }
+
+
+
+
+
+// -> Concreate Method can use in abstract class
+
+// abstract class Vehicle{
+    
+//     public void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+
+
+// -> abstract class ---> abstract methods, concreate methods
+
+// abstract class Vehicle{
+//     // abstract method
+//     abstract public void start();
+
+//     // concrete method
+//     public void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+
+
+// -> Must implement abstract method for inherite class
+
+// abstract class Vehicle{
+//     // abstract method
+//     abstract public void start();
+
+//     abstract public void end();
+
+//     // concrete method
+//     public void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
+
+// class Car extends Vehicle{
+//     public void start(){
+//         //
+//     }
+
+//     public void end(){
+//         //
+//     }
+// }
+
+
+
+// -> Can't create instance form abstract class...
+
+// abstract class Vehicle{
+//     // abstract method
+//     abstract public void start();
+
+//     // Constructor...
+//     Vehicle(){}
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1;
+//         // v1-new Vehicle(); // Error...
+//         v1=null;
+//         v1.start();
+//     }
+// }
+
+
+
+
+// abstract class Vehicle{
+//     // abstract method
+//     abstract public void start();
+// }
+
+// class Car extends Vehicle{
+//     public void start(){
+//         System.out.println("Car Starting...");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1=new Car();
+//         v1.start();
+//     }
+// }
+
+
+
+
+
+// -> variable can't abstract...
+
+// abstract class Vehicle{
+//     int year;
+
+//     // abstract int model; // Error...
+
+//     abstract public void park();
+// }
+
+
+
+
+// -> abstract class has Consructor...
 
 abstract class Vehicle{
-    abstract public void park();
-}
+    // abstract method
+    abstract public void start();
 
-class Car extends Vehicle{
-    @Override
-    public void park(){
-        System.out.println("Car Parking...");
-    }
-}
-
-class Bus extends Vehicle{
-    @Override
-    public void park(){
-        System.out.println("Bus Parking...");
-    }
-}
-
-class Van extends Vehicle{
-    @Override
-    public void park(){
-        System.out.println("Van Parking...");
-    }
-}
-
-class Demo{
-    public static void main(String[] args) {
-        Vehicle v1;
-        v1=new Car();
-        v1.park();
-
-        v1=new Bus();
-        v1.park();
-
-        v1=new Van();
-        v1.park();
+    Vehicle(){
+        //
     }
 }
