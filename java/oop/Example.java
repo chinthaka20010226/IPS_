@@ -2587,18 +2587,18 @@ import javax.swing.*;
 
 // -> 
 
-interface A{
-    public void start();
+// interface A{
+//     public void start();
 
-    // implement method
-    default public void end(){
-        /// =================
-    }
+//     // implement method
+//     default public void end(){
+//         /// =================
+//     }
 
-    static public void middel(){
-        /// =================
-    }
-}
+//     static public void middel(){
+//         /// =================
+//     }
+// }
 
 
 
@@ -2608,3 +2608,42 @@ interface A{
 
 // Event Handeling
 
+// =================================================================================================================
+
+// ---> inner classes,
+
+
+// -> Regular Inner Classes....
+
+class Outer{
+    int a=100;
+
+    void mOuter(){
+        System.out.println("Outer method...");
+    }
+
+    // --------------------------------------------------------
+
+    class Inner{
+        int b=200;
+
+        void mInner(){
+            System.out.println("Inner method...");
+            System.out.println("a : "+a);
+            System.out.println("b : "+b);
+        }
+    }
+    // ---------------------------------------------------------
+}
+
+class Demo{
+    public static void main(String[] args) {
+        Outer x=new Outer();
+        System.out.println(x.a);
+        x.mOuter();
+
+        Outer.Inner y=new Outer().new Inner();
+        System.out.println(y.b);
+        y.mInner();
+    }
+}
