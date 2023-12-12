@@ -2583,6 +2583,8 @@ import javax.swing.*;
 
 
 
+
+
 // -> 
 
 interface A{
@@ -2590,6 +2592,10 @@ interface A{
 
     // implement method
     default public void end(){
+        /// =================
+    }
+
+    static public void middel(){
         /// =================
     }
 }
