@@ -1913,9 +1913,11 @@ class Demo{
         Customer c3=new Customer(1002,"Amal");
         Customer c4=c1;
 
-        // System.out.println("c1==c2"+" "+(c1==c2));
-        // System.out.println("c1==c3"+" "+(c1==c3));
-        // System.out.println("c1==c4"+" "+(c1==c4));
+        /*
+        System.out.println("c1==c2"+" "+(c1==c2));
+        System.out.println("c1==c3"+" "+(c1==c3));
+        System.out.println("c1==c4"+" "+(c1==c4));
+        */
 
         System.out.println("c1==c2"+" "+(c1.equals(c2)));
         System.out.println("c1==c3"+" "+(c1.equals(c3)));
