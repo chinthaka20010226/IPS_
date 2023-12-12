@@ -1165,6 +1165,10 @@ class A{
     void printA(){
         System.out.println("a : "+a);
     }
+
+    static{
+        System.out.println("static block A");
+    }
 }
 
 class B extends A{
@@ -1182,6 +1186,10 @@ class B extends A{
     void printAllAttributes(){
         System.out.println("a : "+a);
         System.out.println("b : "+b);
+    }
+
+    static{
+        System.out.println("static block B");
     }
 }
 class Demo{
