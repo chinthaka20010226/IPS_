@@ -1159,42 +1159,148 @@ import javax.swing.*;
 
 
 
+// class A{
+//     int a;
+
+//     void printA(){
+//         System.out.println("a : "+a);
+//     }
+
+//     static{
+//         System.out.println("static block A");
+//     }
+// }
+
+// class B extends A{
+//     int b;
+
+//     void printB(){
+//         System.out.println("b : "+b);
+//     }
+
+//     void printAllMethod(){
+//         printA();
+//         printB();
+//     }
+
+//     void printAllAttributes(){
+//         System.out.println("a : "+a);
+//         System.out.println("b : "+b);
+//     }
+
+//     static{
+//         System.out.println("static block B");
+//     }
+// }
+// class Demo{
+//     public static void main(String[] args) {
+//         new B(); // anonymous object...
+//                  // wait a little bit and render if it is not use
+//     }
+// }
+
+
+
+
+
+// class A{
+//     int a;
+
+//     static{
+//         System.out.println("static block A");
+//     }
+// }
+
+// class B extends A{
+//     int b;
+
+//     static{
+//         System.out.println("static block B");
+//     }
+// }
+
+// class C extends B{
+//     int c;
+    
+//     static{
+//         System.out.println("static block C");
+//     }
+// }
+
+// class D extends A{
+//     int d;
+    
+//     static{
+//         System.out.println("static block D");
+//     }
+// }
+
+// class E{
+//     int e;
+    
+//     static{
+//         System.out.println("static block E");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         new D();
+//         // ==========================
+//         new E();
+//     }
+// }
+
+
+
+
+
+
 class A{
     int a;
 
-    void printA(){
-        System.out.println("a : "+a);
+    A(){
+        System.out.println("A()");
     }
 
-    static{
-        System.out.println("static block A");
+    A(int x){
+        System.out.println("A(int )");
+    }
+
+    A(int x,int y){
+        System.out.println("A(int ,int )");
     }
 }
 
 class B extends A{
     int b;
 
-    void printB(){
-        System.out.println("b : "+b);
+    B(){
+        // Default... compiler
+        super();
+        System.out.println("B()");
     }
 
-    void printAllMethod(){
-        printA();
-        printB();
+    B(int x){
+        // Not Default, We assigned...
+        super(x);
+        System.out.println("B(int )");
     }
 
-    void printAllAttributes(){
-        System.out.println("a : "+a);
-        System.out.println("b : "+b);
-    }
-
-    static{
-        System.out.println("static block B");
+    B(int x,int y){
+        super(x,y);
+        System.out.println("B(int ,int )");
     }
 }
 class Demo{
     public static void main(String[] args) {
-        new B(); // anonymous object...
-                 // wait a little bit and render if it is not use
+        new B();
+        System.out.println("----------------------");
+
+        new B(10);
+        System.out.println("----------------------");
+
+        new B(10,20);
+        System.out.println("----------------------");
     }
 }
