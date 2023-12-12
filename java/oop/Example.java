@@ -2111,18 +2111,18 @@ import javax.swing.*;
 
 // -> Override, Ok ---> (Low -> High)
 
-class Vehicle{
-    void park(){
-        System.out.println("Vehicle parking...");
-    }
-}
+// class Vehicle{
+//     void park(){
+//         System.out.println("Vehicle parking...");
+//     }
+// }
 
-class Car extends Vehicle{
+// class Car extends Vehicle{
     
-    public void park(){
-        System.out.println("Car Parking...");
-    }
-}
+//     public void park(){
+//         System.out.println("Car Parking...");
+//     }
+// }
 
 
 /*
@@ -2131,3 +2131,34 @@ class Car extends Vehicle{
  * protected
  * public
  */
+
+
+
+// -> Must same return type
+
+class Vehicle{
+    public boolean getData(){
+        return true;
+    }
+
+    public Vehicle set(){
+        return null;
+    }
+}
+
+class Van{
+    //
+}
+
+class Car extends Vehicle{
+    
+    public boolean getData(){
+        return true;
+    }
+
+
+    // Core variant return type... --> only for extends class
+    public set(){
+        return null;
+    }
+}
