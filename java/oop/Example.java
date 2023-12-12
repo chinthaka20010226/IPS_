@@ -1256,42 +1256,98 @@ import javax.swing.*;
 
 
 
+// class A{
+//     int a;
+
+//     A(){
+//         System.out.println("A()");
+//     }
+
+//     A(int x){
+//         System.out.println("A(int )");
+//     }
+
+//     A(int x,int y){
+//         System.out.println("A(int ,int )");
+//     }
+// }
+
+// class B extends A{
+//     int b;
+
+//     B(){
+//         // Default... compiler
+//         super();
+//         System.out.println("B()");
+//     }
+
+//     B(int x){
+//         // Not Default, We assigned...
+//         super(x);
+//         System.out.println("B(int )");
+//     }
+
+//     B(int x,int y){
+//         super(x,y);
+//         System.out.println("B(int ,int )");
+//     }
+// }
+// class Demo{
+//     public static void main(String[] args) {
+//         new B();
+//         System.out.println("----------------------");
+
+//         new B(10);
+//         System.out.println("----------------------");
+
+//         new B(10,20);
+//         System.out.println("----------------------");
+//     }
+// }
+
+
+
+
+
+
+
 class A{
     int a;
 
-    A(){
-        System.out.println("A()");
-    }
+    // A(){
+    //     System.out.println("A()");
+    // }
 
     A(int x){
         System.out.println("A(int )");
     }
 
-    A(int x,int y){
-        System.out.println("A(int ,int )");
-    }
+    // A(int x,int y){
+    //     System.out.println("A(int ,int )");
+    // }
 }
 
 class B extends A{
     int b;
 
     B(){
-        // Default... compiler
-        super();
+        // Now, Not Allocate Default Constructor in Super Class... 
+        super();  // Error,
         System.out.println("B()");
     }
 
-    B(int x){
-        // Not Default, We assigned...
-        super(x);
-        System.out.println("B(int )");
-    }
+    // B(int x){
+    //     // Not Default, We assigned...
+    //     super(x);
+    //     System.out.println("B(int )");
+    // }
 
-    B(int x,int y){
-        super(x,y);
-        System.out.println("B(int ,int )");
-    }
+    // B(int x,int y){
+    //     super(x,y);
+    //     System.out.println("B(int ,int )");
+    // }
 }
+
 class Demo{
     public static void main(String[] args) {
         new B();
