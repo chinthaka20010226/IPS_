@@ -1774,20 +1774,151 @@ import javax.swing.*;
 
 // ---> Class "Object"  /*Common behaviors for all Class */
 
-class SuperCustomer{ /*Compiler insert (extends Object) */
-    //
+// class SuperCustomer{ /*Compiler insert (extends Object) */
+//     //
+// }
+
+// class SubCustomer extends SuperCustomer{
+//     //
+// }
+
+// public class Example {
+//     public static void main(String args[]){
+//         SuperCustomer c1=new SuperCustomer();
+//         c1.toString();
+//         c1.getClass();
+//         c1.equals(null);
+//         c1.hashCode();
+//     }
+// }
+
+
+
+
+
+// class A{
+//     //
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         // Object o;
+//         // o=new Integer("");
+//         // o=new String();
+//         // o=new int[10];
+//         // o=new A();
+
+
+
+//         int[] arr=new int[10];
+//         arr.toString();
+//         arr.hashCode();
+//         arr.getClass();
+//     }
+// }
+
+
+
+
+
+
+// ---> GetClass()
+
+// class Customer{
+//     int code;
+//     String name;
+
+//     Customer(int code, String name){
+//         this.code=code;
+//         this.name=name;
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Customer c1=new Customer(1001,"Kamal");
+//         Class data=c1.getClass();
+//         System.out.println(data.getName());
+//         System.out.println(new Customer(1002, "Jagath").getClass().getName());
+//     }
+// }
+
+
+
+
+// ---> hashCode(), toString()
+
+// class Customer{
+//     int code;
+//     String name;
+
+//     Customer(int code, String name){
+//         this.code=code;
+//         this.name=name;
+//     }
+
+//     // @Override
+//     // public String toString(){
+//     //     return this.getClass().getName()+"@"+Integer.toHexString(this.hashCode());
+//     // }
+
+//     @Override
+//     public String toString(){
+//         return "Customer{"+
+//                 "code="+code+", "+
+//                 "name="+name+"}";
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Customer c1=new Customer(1001,"Kamal");
+//         Customer c2=new Customer(1002,"Namal");
+
+//         int i=c1.hashCode(); // unique number gor given class...
+//         int j=c2.hashCode(); // unique number gor given class...
+
+//         System.out.println(i);
+//         System.out.println(Integer.toHexString(i));
+//         System.out.println(c1);
+//     }
+// }
+
+
+
+
+// ---> equals()
+
+class Customer{
+    int code;
+    String name;
+
+    Customer(int code, String name){
+        this.code=code;
+        this.name=name;
+    }
+
+    public boolean equals(Object obj){
+        if(this==obj){
+            return true;
+        }
+        return false;
+    } 
 }
 
-class SubCustomer extends SuperCustomer{
-    //
-}
+class Demo{
+    public static void main(String[] args) {
+        Customer c1=new Customer(1001,"Kamal");
+        Customer c2=new Customer(1002,"Namal");
+        Customer c3=new Customer(1002,"Amal");
+        Customer c4=c1;
 
-public class Example {
-    public static void main(String args[]){
-        SuperCustomer c1=new SuperCustomer();
-        c1.toString();
-        c1.getClass();
-        c1.equals(null);
-        c1.hashCode();
+        // System.out.println("c1==c2"+" "+(c1==c2));
+        // System.out.println("c1==c3"+" "+(c1==c3));
+        // System.out.println("c1==c4"+" "+(c1==c4));
+
+        System.out.println("c1==c2"+" "+(c1.equals(c2)));
+        System.out.println("c1==c3"+" "+(c1.equals(c3)));
+        System.out.println("c1==c4"+" "+(c1.equals(c4)));
     }
 }
