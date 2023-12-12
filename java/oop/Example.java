@@ -1513,5 +1513,8 @@ class Demo{
     public static void main(String[] args) {
         A a1=new B();  // Ok...
         // B b1=new A();  // Error...
+
+        a1.a=100;
+        a1.b=200;
     }
 }
