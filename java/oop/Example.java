@@ -2347,11 +2347,18 @@ import javax.swing.*;
 
 // -> abstract class has Consructor...
 
-abstract class Vehicle{
-    // abstract method
-    abstract public void start();
+// abstract class Vehicle{
+//     // abstract method
+//     abstract public void start();
 
-    Vehicle(){
-        //
-    }
-}
+//     Vehicle(){
+//         //
+//     }
+// }
+
+
+
+
+
+
+// ---> Interfacess....
