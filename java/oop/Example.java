@@ -1432,6 +1432,57 @@ import javax.swing.*;
 
 
 
+// class A{
+//     int a;
+
+//     void printA(){
+//         System.out.println("a : "+a);
+//     }
+// }
+
+// class B extends A{
+//     int b;
+
+//     void printB(){
+//         System.out.println("b : "+b);
+//     }
+
+//     void callAll(){
+//         printA();
+//         printB();
+//     }
+
+//     void printAllValue(){
+//         System.out.println("a : "+a);
+//         System.out.println("b : "+b);
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         A a1=null;
+//         a1.a=100;
+//         a1.b=200; // B is inherite in A, therefore B know all a,b values, but A doesn't know...
+
+//         a1.printA();
+//         // a1.printB(); // Error...
+
+//         B b1=null;
+//         b1.a=100;
+//         b1.b=200;
+
+//         b1.printA();
+//         b1.printB();
+//     }
+// }
+
+
+
+
+
+
+
+
 class A{
     int a;
 
@@ -1460,18 +1511,7 @@ class B extends A{
 
 class Demo{
     public static void main(String[] args) {
-        A a1=null;
-        a1.a=100;
-        a1.b=200; // B is inherite in A, therefore B know all a,b values, but A doesn't know...
-
-        a1.printA();
-        // a1.printB(); // Error...
-
-        B b1=null;
-        b1.a=100;
-        b1.b=200;
-
-        b1.printA();
-        b1.printB();
+        A a1=new B();  // Ok...
+        // B b1=new A();  // Error...
     }
 }
