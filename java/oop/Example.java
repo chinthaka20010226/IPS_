@@ -2767,34 +2767,91 @@ import javax.swing.*;
 // -> Lamda expersion....
 
 
+// interface Vehicle{
+//     public int park(int location);
+// }
+
+// interface Car extends Vehicle{
+    
+// }
+
+// abstract class Van implements Vehicle{
+    
+// }
+
+// abstract class Bus implements Vehicle{
+    
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1;
+//         // v1=(int location)->100; // Implicitly returning
+//         v1=(int location)->{
+//             System.out.println("Car parking...");
+//             System.out.println("Car parking...");
+//             System.out.println("Car parking...");
+//             return 100;
+//         };
+//         int x=v1.park(1001);
+
+//         Vehicle v2;
+//         v2=(int location)->{System.out.println("Van parking...");
+//             return 200;
+//         };
+//         int y=v2.park(2001);
+
+//         Vehicle v3;
+//         v3=(int location)->{System.out.println("Bus parking...");
+//             return 300;
+//         };
+//         int z=v3.park(3001);
+//     }
+// }
+
+
+
+
+
+
+// -> Lamda Expresion only for Functional interfaces...
+
+// interface Vehicle{
+//     public void park();
+
+//     // public void start(); // Error ---> because Lamda Expression use for only Function interfaces...
+
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1;
+//         v1=()->System.out.println("Car Parking!...");
+//         v1.park();
+//     }
+// }
+
+
+
+
+
+
+// ->
+
 interface Vehicle{
     public void park();
-}
 
-interface Car extends Vehicle{
-    
-}
+    default public void start(){
+        System.out.println("Default Method...");
+    }
 
-abstract class Van implements Vehicle{
-    
-}
-
-abstract class Bus implements Vehicle{
-    
 }
 
 class Demo{
     public static void main(String[] args) {
         Vehicle v1;
-        v1=()->{System.out.println("Car parking...");};
+        v1=()->System.out.println("Car Parking!...");
         v1.park();
-
-        Vehicle v2;
-        v2=()->{System.out.println("Van parking...");};
-        v2.park();
-
-        Vehicle v3;
-        v3=()->{System.out.println("Bus parking...");};
-        v3.park();
+        v1.start();
     }
 }
