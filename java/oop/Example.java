@@ -1550,10 +1550,6 @@ class Demo{
         Dog d1=new Dog();
         d1.sound();
 
-        Animal a1=new Animal();
-        a1.sound();
-
-        Animal a2=new Dog();
-        a2.sound();
+        
     }
 }
