@@ -2719,6 +2719,54 @@ import javax.swing.*;
 
 
 
+// interface Vehicle{
+//     public void park();
+// }
+
+// interface Car extends Vehicle{
+    
+// }
+
+// abstract class Van implements Vehicle{
+    
+// }
+
+// abstract class Bus implements Vehicle{
+    
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Vehicle v1=new Car(){
+//             public void park(){
+//                 System.out.println("Car parking...");
+//             }
+//         };
+//         v1.park();
+
+//         Vehicle v2=new Van(){
+//             public void park(){
+//                 System.out.println("Van parking...");
+//             }
+//         };
+//         v1.park();
+
+//         Vehicle v3=new Bus(){
+//             public void park(){
+//                 System.out.println("Bus parking...");
+//             }
+//         };
+//         v1.park();
+//     }
+// }
+
+
+
+
+
+// -> Lamda expersion....
+
+
 interface Vehicle{
     public void park();
 }
@@ -2737,25 +2785,16 @@ abstract class Bus implements Vehicle{
 
 class Demo{
     public static void main(String[] args) {
-        Vehicle v1=new Car(){
-            public void park(){
-                System.out.println("Car parking...");
-            }
-        };
+        Vehicle v1;
+        v1=()->{System.out.println("Car parking...");};
         v1.park();
 
-        Vehicle v2=new Van(){
-            public void park(){
-                System.out.println("Van parking...");
-            }
-        };
-        v1.park();
+        Vehicle v2;
+        v2=()->{System.out.println("Van parking...");};
+        v2.park();
 
-        Vehicle v3=new Bus(){
-            public void park(){
-                System.out.println("Bus parking...");
-            }
-        };
-        v1.park();
+        Vehicle v3;
+        v3=()->{System.out.println("Bus parking...");};
+        v3.park();
     }
 }
